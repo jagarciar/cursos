@@ -41,3 +41,4 @@ Este proceso es recursivo: si el componente actualizado devuelve algún otro com
 - Después de que el renderizado haya terminado y React haya actualizado el DOM, el navegador volverá a pintar la pantalla
 :::
 
+
