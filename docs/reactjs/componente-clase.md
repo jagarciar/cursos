@@ -6,7 +6,7 @@ title: 5. Componentes de clase
 ---
 
 # 5. Componentes de clase
-
+a
 **React** es una biblioteca de **JavaScript** para renderizar **interfaces de usuario** (**UI** por sus siglas en inglés). La **UI** se construye a partir de pequeñas unidades como botones, texto e imágenes. **React** te permite combinarlas en **componentes reutilizables** y anidables. **React** clasifica los componentes en : **componentes funcionales** y **componentes de clase**.
 
 Los **componentes de clase** son **clases** que extienden de la super clase **React.Component**. Los **componentes de clase** permiten guardar el **estado** y permiten controlar lo que ocurre durante su **ciclo de vida**, exponiéndonos métodos como **componentDidMount** o **componentWillUnmount**. 
