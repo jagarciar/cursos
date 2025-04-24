@@ -19,6 +19,11 @@ export:
   permalink: '/about-export'
   description: 'Tutoriales donde se menciona la palabra componente export'
 
+hooks:
+  label: 'hooks'
+  permalink: '/about-hooks'
+  description: 'Tutoriales donde se menciona la palabra componente hooks'
+
 npm:
   label: 'NPM'
   permalink: '/about-npm'

@@ -1,7 +1,7 @@
 ---
 id: ciclo-vida
-title: 11. Ciclo de vida
-sidebar_position: 11
+title: 12. Ciclo de vida
+sidebar_position: 12
 author: jeogarod
 description: ¿Qué es renderizar un componente? ¿Cada cuánto se renderiza?
 tags:
@@ -16,7 +16,7 @@ last_update:
   author: Jeyson Andrés García Rodríguez
 ---
 
-# Ciclo de vida
+# 12. Ciclo de vida
 
 ## Renderizado
 
