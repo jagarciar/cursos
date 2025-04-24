@@ -1,0 +1,50 @@
+
+componente-clase:
+  label: 'Componente de clase'
+  permalink: '/about-class-component'
+  description: 'Tutoriales donde se menciona la palabra componente de clase'
+
+componente-funcional:
+  label: 'Componente funcional'
+  permalink: '/about-functional-component'
+  description: 'Tutoriales donde se menciona la palabra componente funcional'
+
+createRoot:
+  label: 'createRoot'
+  permalink: '/about-createRoot'
+  description: 'Tutoriales donde se menciona la palabra componente createRoot'
+
+export:
+  label: 'export'
+  permalink: '/about-export'
+  description: 'Tutoriales donde se menciona la palabra componente export'
+
+npm:
+  label: 'NPM'
+  permalink: '/about-npm'
+  description: 'Tutoriales donde se menciona la palabra npm'
+
+react:
+  label: 'React'
+  permalink: '/about-react'
+  description: 'Tutoriales donde se menciona la palabra react'
+
+reactjs:
+  label: 'React JS'
+  permalink: '/about-react-js'
+  description: 'Tutoriales donde se menciona la palabra reactjs'
+
+useEffect:
+  label: 'useEffect'
+  permalink: '/about-useEffect'
+  description: 'Tutoriales donde se menciona la palabra useEffect'
+
+useState:
+  label: 'useState'
+  permalink: '/about-useState'
+  description: 'Tutoriales donde se menciona la palabra useState'
+
+vite:
+  label: 'Vite'
+  permalink: '/about-vite'
+  description: 'Tutoriales donde se menciona la palabra vite'

@@ -8,7 +8,7 @@ author: Jeyson Andrés García Rodríguez
 
 # 3. Estructura de un proyecto
 
-Fue creado previamente un proyecto y/o un aplicativo **ReactJS** haciendo uso de **Vite** como se explicó en el tutorial [2. Creación de un proyecto](./clase-1).
+Fue creado previamente un proyecto y/o un aplicativo **ReactJS** haciendo uso de **Vite** como se explicó en el tutorial [2. Creación de un proyecto](./crear).
 
 El resultado obtenido es un conjunto de archivos y carpetas con la siguiente estructura:
 

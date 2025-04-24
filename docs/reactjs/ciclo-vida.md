@@ -1,8 +1,16 @@
 ---
-author: "Jeyson Andrés García Rodríguez"
 id: ciclo-vida
-sidebar_position: 11
 title: 11. Ciclo de vida
+sidebar_position: 11
+author: jeogarod
+description: ¿Qué es renderizar un componente? ¿Cada cuánto se renderiza?
+tags:
+  - react
+  - reactjs
+  - createRoot
+  - npm
+  - vite
+  - useState
 ---
 
 # Ciclo de vida

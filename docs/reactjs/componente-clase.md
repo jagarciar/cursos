@@ -1,8 +1,16 @@
 ---
-author: "Jeyson Andrés García Rodríguez"
 id: componentes-clase
-sidebar_position: 5
 title: 5. Componentes de clase
+sidebar_position: 5
+author: jeogarod
+description: ¿Qué es un componente de clase?
+tags:
+    - react
+    - reactjs
+    - vite
+    - npm
+    - componente-clase
+    - export
 ---
 
 # 5. Componentes de clase

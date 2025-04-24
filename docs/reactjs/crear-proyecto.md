@@ -1,9 +1,17 @@
 ---
 id: crear
 title: 2. Creación de un proyecto
-author: Jeyson Andrés García Rodríguez
+author: jeogarod
 description: Creación de un proyecto y/o aplicativo ReactJS haciendo uso de Vite
 sidebar_position: 2
+tags:
+    - react
+    - reactjs
+    - vite
+    - npm
+last_update:
+  date: 04/24/2025
+  author: Jeyson Andrés García Rodríguez
 ---
 
 # 2. Creación de un proyecto

@@ -1,9 +1,16 @@
 ---
-author: "Jeyson Andrés García Rodríguez"
 id: componentes-funcional
-description: Creación de un componente funcional.
-sidebar_position: 4
 title: 5. Componentes funcionales
+sidebar_position: 4
+author: jeogarod
+description: Creación de un componente funcional.
+tags:
+    - react
+    - reactjs
+    - vite
+    - npm
+    - componente-funcional
+    - export
 ---
 
 # 4. Componentes funcionales
