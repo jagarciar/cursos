@@ -15,14 +15,15 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-site.example.com',
+  url: 'https://github.com/jagarciar',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/',
+  baseUrl: '/cursos/',
+  trailingSlash:false,
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'jagarcia', // Usually your GitHub org/user name.
+  organizationName: 'jagarciar', // Usually your GitHub org/user name.
   projectName: 'cursos', // Usually your repo name.
 
   onBrokenLinks: 'throw',
@@ -49,8 +50,7 @@ const config = {
           sidebarPath: './sidebars.js',
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: `https://github.com/jagarciar/cursos/tree/main/`,
         },
         blog: {
           showReadingTime: true,
@@ -60,8 +60,7 @@ const config = {
           },
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+          editUrl: `https://github.com/jagarciar/cursos/tree/main/`,
           // Useful options to enforce blogging best practices
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
