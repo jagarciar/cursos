@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcursos=self.webpackChunkcursos||[]).push([[797],{8923:a=>{a.exports=JSON.parse('{"categoryGeneratedIndex":{"title":"JavaScript","slug":"/category/javascript","permalink":"/cursos/docs/category/javascript","sidebar":"tutorialSidebar","navigation":{"next":{"title":"1. Variables","permalink":"/cursos/docs/javascript/variables"}}}}')}}]);

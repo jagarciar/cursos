@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcursos=self.webpackChunkcursos||[]).push([[124],{8430:e=>{e.exports=JSON.parse('{"categoryGeneratedIndex":{"title":"React JS","slug":"/category/react-js","permalink":"/cursos/docs/category/react-js","sidebar":"tutorialSidebar","navigation":{"next":{"title":"1. Introducci\xf3n","permalink":"/cursos/docs/reactjs/intro"}}}}')}}]);
