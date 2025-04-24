@@ -79,7 +79,6 @@ const config = {
       // Replace with your project's social card
       image: 'img/docusaurus-social-card.jpg',
       navbar: {
-        title: 'JEO',
         logo: {
           alt: 'JEO',
           src: 'img/logo-sinfondo-negro.png',
@@ -93,10 +92,6 @@ const config = {
           },
           {to: '/blog', label: 'Blog', position: 'left'}
         ],
-      },
-      footer: {
-        style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} JEO construido con Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
