@@ -11,6 +11,9 @@ tags:
     - npm
     - componente-clase
     - export
+last_update:
+  date: 04/24/2025
+  author: Jeyson Andrés García Rodríguez
 ---
 
 # 5. Componentes de clase

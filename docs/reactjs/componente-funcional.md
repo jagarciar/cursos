@@ -11,6 +11,9 @@ tags:
     - npm
     - componente-funcional
     - export
+last_update:
+  date: 04/24/2025
+  author: Jeyson Andrés García Rodríguez
 ---
 
 # 4. Componentes funcionales
