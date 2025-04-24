@@ -15,10 +15,10 @@ const config = {
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://jagarciar.github.io',
+  url: 'https://jagarciar.github.io/cursos',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/cursos',
+  baseUrl: '/',
   trailingSlash:false,
 
   // GitHub pages deployment config.
