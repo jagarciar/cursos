@@ -91,7 +91,7 @@ Carro.propTypes = {
 
 Los **PropTypes** también son objetos con una **clave** y un **par de valores** donde la 'clave' es el nombre de la propiedad, mientras que el valor representa el tipo o la clase por la que se definen.
 
-## Transferenecia
+## Flujo unidireccional de datos
 
 Para transferir el valor de un atributo de una **prop** definido en **componente funcional padre** a un **componente funcional hijo** debemos:
 

@@ -31,8 +31,3 @@ En caso de querer probar o testear el aplicativo que fue construido por defecto 
 ```javascript
 npm run dev
 ```
-
-## Componentes
-
-En la **programación imperativa**, lo descrito arriba se corresponde directamente con como implementas la interacción. Tienes que escribir las instrucciones exactas para manipular la UI dependiendo de lo que acabe de suceder. Esta es otra manera de abordar este concepto: imagina acompañar a alguien en un coche mientras le dices paso a paso que tiene que hacer.
-

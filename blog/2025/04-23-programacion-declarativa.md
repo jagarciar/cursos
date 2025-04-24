@@ -5,7 +5,7 @@ authors: jeogarod
 tags: [programacion, declarativa, react, reactjs]
 ---
 
-# Piensa en la UI
+# Programación declarativa
 
 ## Determina qué produce un evento
 

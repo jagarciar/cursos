@@ -5,6 +5,8 @@ authors: jeogarod
 tags: [programacion, imperativa, react, reactjs]
 ---
 
+# Programación imperativa
+
 Cuando diseñas interacciones con la UI, seguramente pensarás en como la UI cambia en respuesta a las acciones del usuario. Imagina un formulario que permita al usuario enviar una respuesta:
 
 - Cuando escribes algo en el formulario, el botón “Enviar” se habilita.
