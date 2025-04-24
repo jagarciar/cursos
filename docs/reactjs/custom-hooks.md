@@ -11,6 +11,7 @@ tags:
   - vite
   - useState
   - useEffect
+  - hooks
 last_update:
   date: 04/24/2025
   author: Jeyson Andrés García Rodríguez
@@ -23,3 +24,5 @@ Los **custom hooks** en **React** son un tipo de **función JavaScript** que sim
 :::tip
 Los **custom hooks** en **React** son muy útiles para extraer funcionalidades, hacer **refactors** y mantener nuestros componentes más simplificados. Esto es especialmente común cuando tenemos componentes que llaman a una API para obtener un dato, lo meten en un estado y ejecutan una acción determinada con él.
 :::
+
+

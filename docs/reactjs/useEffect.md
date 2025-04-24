@@ -35,8 +35,111 @@ import React, { useEffect } from 'react'
 Otro caso de uso muy típico de **useEffect** es la suscripción a los eventos del DOM. Por ejemplo, puede ser útil para subscribirnos al evento de scroll, o el de Intersection Observer para crear fácilmente un componente que sirva de Lazy Load… o simplemente para escuchar el evento resize del window
 :::
 
+Supongamos el siguiente ejemplo: Fue creado el componente **Reloj** en el archivo **/src/RelojApp.jsx**. El componente **Reloj** tiene una variable de estado nombrada **segundos**. A su vez, definió la función **setSegundos** para actualizar el valor de la variable **segundos**. 
+
+Se implementó la función **actualizarSegundos** la cuál no recibe ningún parámetro e invoca la función **setSegundos** aumentando el valor de la variable **segundos** en 1. 
+
+Finalmente el componente **Reloj** retorna en un elemento **HTML** un parráfo que concatena el contenido Han transcurrido X segundos, donde X debe ser el valor de la variable **segundos**. 
+
+```javascript title="/src/RelojApp.jsx"
+import { useState, useEffect } from 'react';
+import React from 'react'
+
+export const Reloj = () => {
+
+  const [segundos, setSegundos] = useState(0)
+
+  const actualizarSegundos = () => {
+    setSegundos(segundos + 1);
+  }
+
+  return (
+    <>
+        <p>Han transcurrido {segundos} segundos</p>
+    </>
+  )
+}
+```
+
+Si ejecutamos el componente tal cuál como esta hasta el momento, nunca se actualizará la variable de estado **segundos**. Esto dado que no existe ningún evento que desencadene su actualización. 
+
+Partiendo de que es necesario actualizar el valor de la variable **segundos** después de cada renderización del componente **Reloj** podemos adicionar el hook **useEffect**. 
+
+Al referenciar en **useEffect** la función **actualizarSegundos**, cada que se renderice el componente, se invocará la función actualizando el valor de la variable de estado **segundos**. Aún cuando esta alternativa es valida, encontraremos al probar nuevamente que se queda en un loop infinito de renderización. 
+
+```javascript title="/src/RelojApp.jsx"
+import { useState, useEffect } from 'react';
+import React from 'react'
+
+export const Reloj = () => {
+
+  const [segundos, setSegundos] = useState(0)
+
+  const actualizarSegundos = () => {
+    setSegundos(segundos + 1);
+  }
+
+  useEffect(actualizarSegundos)
+
+  return (
+    <>
+        <p>Han transcurrido {segundos} segundos</p>
+    </>
+  )
+}
+```
+
 ## Loops en la renderización 
 
 Por defecto los efectos se disparan cada vez que se realiza un nuevo renderizado pero podemos evitar que el efecto se vuelva a ejecutar pasándole un segundo parámetro al hook. El parámetro es un array con todos los valores de los que depende nuestro efecto, de forma que sólo se ejecutará cuando ese valor cambie.
 
+Esto se soluciona adicionando al hoook **useEffect** un arreglo de aquellas variables de estado que al cambiar su valor deben ejecutar el evento. 
 
+En nuestro ejemplo, para invocar la función **actualizarSegundos** en el hook **useEffect** dependemos de la actualización del valor de la variable de estado **segundos**. 
+
+```javascript title="/src/RelojApp.jsx"
+import { useState, useEffect } from 'react';
+import React from 'react'
+
+export const Reloj = () => {
+
+  const [segundos, setSegundos] = useState(0)
+
+  const actualizarSegundos = () => {
+    setSegundos(segundos + 1);
+  }
+
+  useEffect(actualizarSegundos, [segundos])
+
+  return (
+    <>
+        <p>Han transcurrido {segundos} segundos</p>
+    </>
+  )
+}
+```
+Si probamos nuestro componente hasta aquí, pareciera que aún se mantiene la ejecución del loop infinito de renderización pero no es asi. En este caso, después de incluir las variables dependientes, el tiempo de ejecución de la función **actualizarSegundos** es tan rápida que simula o sugiere un loop. 
+
+Adicionemos un timeout a la ejecución para que no se ejecute inmediatamente sino cada 5 segundos:
+
+```javascript title="/src/RelojApp.jsx"
+import { useState, useEffect } from 'react';
+import React from 'react'
+
+export const Reloj = () => {
+
+  const [segundos, setSegundos] = useState(0)
+
+  const actualizarSegundos = () => {
+    setTimeout(() => {  setSegundos(segundos + 5); }, 5000);
+  }
+
+  useEffect(actualizarSegundos, [segundos])
+
+  return (
+    <>
+        <p>Han transcurrido {segundos} segundos</p>
+    </>
+  )
+}
+```
