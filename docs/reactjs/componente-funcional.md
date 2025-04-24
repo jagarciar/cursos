@@ -1,6 +1,7 @@
 ---
 author: "Jeyson Andrés García Rodríguez"
 id: componentes-funcional
+description: Creación de un componente funcional.
 sidebar_position: 4
 title: 5. Componentes funcionales
 ---

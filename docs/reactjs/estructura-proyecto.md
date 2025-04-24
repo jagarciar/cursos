@@ -1,8 +1,9 @@
 ---
-id: clase-2
+id: estructura
 title: 3. Estructura de un proyecto
 description: Explicación sobre la estructura de un proyecto y/o aplicativo ReactJS haciendo uso de Vite
 sidebar_position: 3
+author: Jeyson Andrés García Rodríguez
 ---
 
 # 3. Estructura de un proyecto
