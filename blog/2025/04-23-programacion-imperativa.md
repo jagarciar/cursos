@@ -2,7 +2,11 @@
 slug: programacion-imperativa
 title: Programación imperativa
 authors: jeogarod
-tags: [programacion, imperativa, react, reactjs]
+tags: 
+  - react
+  - reactjs
+  - vite
+  - npm
 ---
 
 # Programación imperativa

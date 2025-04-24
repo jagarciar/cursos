@@ -2,7 +2,11 @@
 slug: programacion-declarativa
 title: Programación declarativa
 authors: jeogarod
-tags: [programacion, declarativa, react, reactjs]
+tags: 
+  - react
+  - reactjs
+  - vite
+  - npm
 ---
 
 # Programación declarativa
@@ -64,6 +68,6 @@ Es viable declarar variables de estado para actualizar la UI. Para el formulario
 
 ### Representa el estado de memoria haciendo uso de useState
 
-En ocaciones, necesitarás representar los estados visuales de tu componente en la memoria con **useState**. Consulta más información de **useState** a través del siguiente link: [](../../docs/reactjs/useState)
+En ocaciones, necesitarás representar los estados visuales de tu componente en la memoria con **useState**. Consulta más información de **useState** a través del siguiente link: [10. useState](/docs/reactjs/useState)
 
 <!-- truncate -->
