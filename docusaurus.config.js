@@ -81,7 +81,7 @@ const config = {
       navbar: {
         logo: {
           alt: 'JEO',
-          src: 'img/logo-sinfondo-negro.png',
+          src: 'img/logo.svg',
         },
         items: [
           {
