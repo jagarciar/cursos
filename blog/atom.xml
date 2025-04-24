@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?><?xml-stylesheet type="text/xsl" href="atom.xsl"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-    <id>https://jagarciar.github.io/blog</id>
+    <id>https://jagarciar.github.io/cursos/blog</id>
     <title>JEO Blog</title>
     <updated>2025-04-23T00:00:00.000Z</updated>
     <generator>https://github.com/jpmonette/feed</generator>
-    <link rel="alternate" href="https://jagarciar.github.io/blog"/>
+    <link rel="alternate" href="https://jagarciar.github.io/cursos/blog"/>
     <subtitle>JEO Blog</subtitle>
-    <icon>https://jagarciar.github.io/img/favicon.ico</icon>
+    <icon>https://jagarciar.github.io/cursos/img/favicon.ico</icon>
     <entry>
         <title type="html"><![CDATA[Programación declarativa]]></title>
-        <id>https://jagarciar.github.io/blog/programacion-declarativa</id>
-        <link href="https://jagarciar.github.io/blog/programacion-declarativa"/>
+        <id>https://jagarciar.github.io/cursos/blog/programacion-declarativa</id>
+        <link href="https://jagarciar.github.io/cursos/blog/programacion-declarativa"/>
         <updated>2025-04-23T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Determina qué produce un evento]]></summary>
-        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="determina-qué-produce-un-evento">Determina qué produce un evento<a href="https://jagarciar.github.io/blog/programacion-declarativa#determina-qu%C3%A9-produce-un-evento" class="hash-link" aria-label="Direct link to Determina qué produce un evento" title="Direct link to Determina qué produce un evento">​</a></h2>
+        <content type="html"><![CDATA[<h2 class="anchor anchorWithStickyNavbar_LWe7" id="determina-qué-produce-un-evento">Determina qué produce un evento<a href="https://jagarciar.github.io/cursos/blog/programacion-declarativa#determina-qu%C3%A9-produce-un-evento" class="hash-link" aria-label="Direct link to Determina qué produce un evento" title="Direct link to Determina qué produce un evento">​</a></h2>
 <p>Puedes desencadenar actualizaciones de estado en respuesta a dos tipos de entradas:</p>
 <ul>
 <li>Entradas humanas, como hacer click en un botón, escribir en un campo, navegar a un link.</li>
 <li>Entradas del ordenador, como recibir una respuesta del navegador, que se complete un timeout, una imagen cargando.</li>
 </ul>
-<h2 class="anchor anchorWithStickyNavbar_LWe7" id="dentifica-los-diferentes-estados-visuales-de-tu-componente">dentifica los diferentes estados visuales de tu componente<a href="https://jagarciar.github.io/blog/programacion-declarativa#dentifica-los-diferentes-estados-visuales-de-tu-componente" class="hash-link" aria-label="Direct link to dentifica los diferentes estados visuales de tu componente" title="Direct link to dentifica los diferentes estados visuales de tu componente">​</a></h2>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="dentifica-los-diferentes-estados-visuales-de-tu-componente">dentifica los diferentes estados visuales de tu componente<a href="https://jagarciar.github.io/cursos/blog/programacion-declarativa#dentifica-los-diferentes-estados-visuales-de-tu-componente" class="hash-link" aria-label="Direct link to dentifica los diferentes estados visuales de tu componente" title="Direct link to dentifica los diferentes estados visuales de tu componente">​</a></h2>
 <p>En las ciencias de la computación, tal vez escucharás algo sobre una <strong>máquina de estad</strong> siendo este uno de muchos <strong>estados</strong>. Si trabajas con un diseñador, habrás visto bocetos para diferentes <strong>estados visuales</strong>. React se encuentra en un punto intermedio de diseño y ciencias de la computación, asi que ambas ideas son fuentes de inspiración.</p>
 <p>Primero, necesitas visualizar todos los diferentes <strong>estados</strong> de la UI que el usuario pueda ver:</p>
 <ul>
@@ -38,21 +38,21 @@
 <li>Una respuesta exitosa de red (ordenador) debería cambiarlo al estado Éxito.</li>
 <li>Una respuesta fallida de red (ordenador) debería cambiarlo al estado Error con el mensaje de error correspondiente.</li>
 </ul>
-<h3 class="anchor anchorWithStickyNavbar_LWe7" id="representa-el-estado-de-memoria-haciendo-uso-de-usestate">Representa el estado de memoria haciendo uso de useState<a href="https://jagarciar.github.io/blog/programacion-declarativa#representa-el-estado-de-memoria-haciendo-uso-de-usestate" class="hash-link" aria-label="Direct link to Representa el estado de memoria haciendo uso de useState" title="Direct link to Representa el estado de memoria haciendo uso de useState">​</a></h3>
-<p>En ocaciones, necesitarás representar los estados visuales de tu componente en la memoria con <strong>useState</strong>. Consulta más información de <strong>useState</strong> a través del siguiente link: <a href="https://jagarciar.github.io/docs/reactjs/useState"></a></p>]]></content>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="representa-el-estado-de-memoria-haciendo-uso-de-usestate">Representa el estado de memoria haciendo uso de useState<a href="https://jagarciar.github.io/cursos/blog/programacion-declarativa#representa-el-estado-de-memoria-haciendo-uso-de-usestate" class="hash-link" aria-label="Direct link to Representa el estado de memoria haciendo uso de useState" title="Direct link to Representa el estado de memoria haciendo uso de useState">​</a></h3>
+<p>En ocaciones, necesitarás representar los estados visuales de tu componente en la memoria con <strong>useState</strong>. Consulta más información de <strong>useState</strong> a través del siguiente link: <a href="https://jagarciar.github.io/cursos/docs/reactjs/useState">10. useState</a></p>]]></content>
         <author>
             <name>Jeyson Andrés García Rodríguez</name>
             <uri>https://github.com/jagarciar</uri>
         </author>
-        <category label="programacion" term="programacion"/>
-        <category label="declarativa" term="declarativa"/>
         <category label="React" term="React"/>
         <category label="React JS" term="React JS"/>
+        <category label="Vite" term="Vite"/>
+        <category label="NPM" term="NPM"/>
     </entry>
     <entry>
         <title type="html"><![CDATA[Programación imperativa]]></title>
-        <id>https://jagarciar.github.io/blog/programacion-imperativa</id>
-        <link href="https://jagarciar.github.io/blog/programacion-imperativa"/>
+        <id>https://jagarciar.github.io/cursos/blog/programacion-imperativa</id>
+        <link href="https://jagarciar.github.io/cursos/blog/programacion-imperativa"/>
         <updated>2025-04-23T00:00:00.000Z</updated>
         <summary type="html"><![CDATA[Cuando diseñas interacciones con la UI, seguramente pensarás en como la UI cambia en respuesta a las acciones del usuario. Imagina un formulario que permita al usuario enviar una respuesta:]]></summary>
         <content type="html"><![CDATA[<p>Cuando diseñas interacciones con la UI, seguramente pensarás en como la UI cambia en respuesta a las acciones del usuario. Imagina un formulario que permita al usuario enviar una respuesta:</p>
@@ -73,9 +73,9 @@ implementas la interacción. Tienes que escribir las instrucciones exactas para 
             <name>Jeyson Andrés García Rodríguez</name>
             <uri>https://github.com/jagarciar</uri>
         </author>
-        <category label="programacion" term="programacion"/>
-        <category label="imperativa" term="imperativa"/>
         <category label="React" term="React"/>
         <category label="React JS" term="React JS"/>
+        <category label="Vite" term="Vite"/>
+        <category label="NPM" term="NPM"/>
     </entry>
 </feed>
