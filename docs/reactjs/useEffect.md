@@ -143,3 +143,40 @@ export const Reloj = () => {
   )
 }
 ```
+
+## Consumo de API's
+
+En el siguiente ejemplo vamos a consumir una **API REST** expuesta públicamente bajo la URL **https://pokeapi.co/api/v2/type/3**. Esta API esta expuesta bajo un método ***HTTP GET**. El resultado del consumo será almacenado en una variable de estado llamada **pokemones** a través de su función **setPokemones**. 
+
+En este ejemplo, a partir de **useEffect** se invocó el consumo de una **API REST** haciendo uso de **fetch**. La función **fetch** recibe el **endpoint** de la **API** y retorna la respuesta en formato **JSON**. El **hook** **useEffect** dependerá del valor cambiante de la variable de estado **pokemones** para hacer nuevamente el llamado. 
+
+Finalmente se muestran los nombres de los pokemones obtenidos. 
+
+```javascript title="/src/PokemonApp.jsx"
+import { useState, useEffect } from 'react';
+import React from 'react'
+
+export const Pokemon = () => {
+
+    const url = "https://pokeapi.co/api/v2/type/3";
+    const [pokemones, setPokemones] = useState([])
+
+    useEffect(() => {
+        fetch(url)
+            .then(response => response.json())
+            // 4. Setting *dogImage* to the image url that we received from the response above
+            .then(data => setPokemones(data.pokemon)).catch((error) => {
+                console.error(error);
+            })
+    }, [pokemones])
+
+    return (
+        <>
+          Hay {pokemones.length} pokemones
+            <ul>
+                {pokemones.map((pokemon) =>  <li key={pokemon.pokemon.name} value={pokemon.pokemon.name}>{pokemon.pokemon.name}</li> )}
+            </ul>
+        </>
+    )
+}
+```
