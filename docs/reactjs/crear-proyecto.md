@@ -1,6 +1,7 @@
 ---
-id: clase-1
+id: crear
 title: 2. Creación de un proyecto
+author: Jeyson Andrés García Rodríguez
 description: Creación de un proyecto y/o aplicativo ReactJS haciendo uso de Vite
 sidebar_position: 2
 ---

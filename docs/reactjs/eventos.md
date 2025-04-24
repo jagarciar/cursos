@@ -35,11 +35,40 @@ export const EventApp = () => {
 }
 ```
 
-### Detener la prograpación
+## 9.1. handleChange
+
+En el siguiente ejemplo creamos un componente funcional llamado **Event**. Este componente contiene una caja de texto. El valor de la caja de texto puede variar. El evento invoca la función **handleChange** que esta implementada previo a cada que se adiciiona eliminan o elementos sobre el valor de la caja de texto. 
+
+***tip
+¿Quieres entender un poco más este ejemplo? :) Primero debe ir a leer el tutorial [10. useState](./useState).
+:::
+
+En el siguiente ejemplo tenemos un botón que llama a la función **handleChange**. Esta función **handleChange** recibe el parámetro **event** y debe ser desclarado antes del return el componente funcional. 
+
+```javascript
+import React, { useState } from 'react'
+ 
+export const EventApp = () => {
+
+    const[palabra, setNuevaPalabara] = useState()
+    
+    const handleChange = (event) => { 
+        setNuevaPalabara(event.target.value)
+    }
+
+    return (
+        <>
+            <input type="text" value={palabra} onChange={handleChange}/>
+        </>
+    )
+}
+```
+
+## 9.2 stopPropagation
 
 Los controladores de eventos reciben un objeto del evento como su único parámetro. Por convención, normalmente es llamado e, que quiere decir “evento”. Puedes usar este objeto para leer información del evento.
 
-Ese objeto del evento también te permite detener la propagación. Si quieres evitar que un evento llegue a los componentes padre, necesitas llamar e.stopPropagation() como este componente Button lo hace:
+Ese objeto del evento también te permite detener la propagación. Si quieres evitar que un evento llegue a los componentes padre, necesitas llamar **e.stopPropagation()** como este componente Button lo hace:
 
 ```javascript
 import React from 'react'
@@ -50,13 +79,14 @@ export const EventApp = () => {
 
     return (
         <>
-            <<button onClick={e => {
-                e.stopPropagation();
-                onClick();
-                }}>
+            <<button onClick={e => {e.stopPropagation();}}>
                 Evento generaodo
                 </button>
         </>
     )
 }
 ```
+
+:::tip
+A diferencia de las funciones de renderizado, los controladores de eventos no necesitan ser puros, asi que es un buen lugar para cambiar algo; por ejemplo, cambiar el valor de un input en respuesta a la escritura, o cambiar una lista en respuesta a un botón presionado.
+:::

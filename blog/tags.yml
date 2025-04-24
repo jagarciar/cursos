@@ -1,19 +1,19 @@
-facebook:
-  label: Facebook
-  permalink: /facebook
-  description: Facebook tag description
+react:
+  label: React
+  description: Framework de desarrollo de software front-end
 
-hello:
-  label: Hello
-  permalink: /hello
-  description: Hello tag description
+reactjs:
+  label: React JS
+  description: Framework de desarrollo de software front-end
 
-docusaurus:
-  label: Docusaurus
-  permalink: /docusaurus
-  description: Docusaurus tag description
+programacion:
+  label: Programación
+  description: Programación de programas de software
 
-hola:
-  label: Hola
-  permalink: /hola
-  description: Hola tag description
+imperativa:
+  label: Programación imperativa
+  description: Pensar en como cambia la UI en respuesta a las acciones del usuario
+
+declarativa:
+  label: Programación declarativa
+  description: Pensar en como cambia la UI en respuesta a las acciones del usuario

@@ -3,7 +3,6 @@ author: "Jeyson Andrés García Rodríguez"
 id: componentes-funcional
 sidebar_position: 4
 title: 5. Componentes funcionales
-keywords: ["React","ReactJS","JavaScript", "UI", "Componentes funcionales", "Componentes de clase", "React.Component", "export"]
 ---
 
 # 4. Componentes funcionales
