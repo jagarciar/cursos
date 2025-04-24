@@ -82,7 +82,7 @@ const config = {
         title: 'JEO',
         logo: {
           alt: 'JEO',
-          src: 'img/logo.svg',
+          src: 'img/logo-sinfondo-negro.png',
         },
         items: [
           {
@@ -96,7 +96,7 @@ const config = {
       },
       footer: {
         style: 'dark',
-        copyright: `Copyright © ${new Date().getFullYear()} JEO Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} JEO construido con Docusaurus.`,
       },
       prism: {
         theme: prismThemes.github,
