@@ -1,5 +1,19 @@
 ---
+id: jsx
+Titule: 6. JSX
+description: ¿Qué es JSX? ¿Qué relación existe entre JSX y React?
+author: Jeyson Andrés García Rodríguez
 sidebar_position: 6
+tags:
+  - react
+  - reactjs
+  - createRoot
+  - npm
+  - vite
+  - jsx
+last_update:
+  date: 04/24/2025
+  author: Jeyson Andrés García Rodríguez
 ---
 
 # 6. JSX

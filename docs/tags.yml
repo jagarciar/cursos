@@ -12,22 +12,32 @@ componente-funcional:
 createRoot:
   label: 'createRoot'
   permalink: '/about-createRoot'
-  description: 'Tutoriales donde se menciona la palabra componente createRoot'
+  description: 'Tutoriales donde se menciona la palabra createRoot'
 
 export:
   label: 'export'
   permalink: '/about-export'
-  description: 'Tutoriales donde se menciona la palabra componente export'
+  description: 'Tutoriales donde se menciona la palabra export'
 
 hooks:
   label: 'hooks'
   permalink: '/about-hooks'
-  description: 'Tutoriales donde se menciona la palabra componente hooks'
+  description: 'Tutoriales donde se menciona la palabra hooks'
+
+jsx:
+  label: 'JSX'
+  permalink: '/about-jsx'
+  description: 'Tutoriales donde se menciona la palabra JSX'
 
 npm:
   label: 'NPM'
   permalink: '/about-npm'
   description: 'Tutoriales donde se menciona la palabra npm'
+
+npm:
+  label: 'props'
+  permalink: '/about-props'
+  description: 'Tutoriales donde se menciona la palabra props'
 
 react:
   label: 'React'

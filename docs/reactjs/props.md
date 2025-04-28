@@ -2,7 +2,19 @@
 author: "Jeyson Andrés García Rodríguez"
 id: props
 sidebar_position: 8
+description: ¿Qué son las Props? ¿Por qué son importantes las Props en React?
 title: 8. Props
+tags:
+  - react
+  - reactjs
+  - createRoot
+  - npm
+  - vite
+  - jsx
+  - props
+last_update:
+  date: 04/24/2025
+  author: Jeyson Andrés García Rodríguez
 ---
 
 # 8. Props

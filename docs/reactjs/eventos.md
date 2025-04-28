@@ -4,6 +4,16 @@ Titule: 9. Eventos
 sidebar_position: 9
 description: ¿Cómo ReactJS actua antes los diversos eventos de una sitio web?
 author: Jeyson Andrés García Rodríguez
+tags:
+  - react
+  - reactjs
+  - createRoot
+  - npm
+  - vite
+  - useState
+last_update:
+  date: 04/24/2025
+  author: Jeyson Andrés García Rodríguez
 ---
 
 # 9. Eventos
