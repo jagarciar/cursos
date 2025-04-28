@@ -14,6 +14,11 @@ createRoot:
   permalink: '/about-createRoot'
   description: 'Tutoriales donde se menciona la palabra createRoot'
 
+css:
+  label: 'CSS'
+  permalink: '/about-css'
+  description: 'Tutoriales donde se menciona la palabra css'
+
 export:
   label: 'export'
   permalink: '/about-export'
