@@ -39,7 +39,7 @@ npm:
   permalink: '/about-npm'
   description: 'Tutoriales donde se menciona la palabra npm'
 
-npm:
+props:
   label: 'props'
   permalink: '/about-props'
   description: 'Tutoriales donde se menciona la palabra props'
