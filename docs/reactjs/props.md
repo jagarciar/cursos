@@ -1,6 +1,6 @@
 ---
 author: jeogarod
-id: reactjs-props
+id: props
 sidebar_position: 8
 description: ¿Qué son las Props? ¿Por qué son importantes las Props en React?
 title: 8. Props

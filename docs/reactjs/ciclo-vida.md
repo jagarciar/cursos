@@ -1,5 +1,5 @@
 ---
-id: reactjs-ciclo-vida
+id: ciclo-vida
 title: 13. Ciclo de vida
 sidebar_position: 13
 author: jeogarod

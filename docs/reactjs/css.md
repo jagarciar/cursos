@@ -1,5 +1,5 @@
 ---
-id: reactjs-css
+id: css
 Title: 7. CSS
 description: ¿Cómo poder modificar los estilos de los componnetes funcionales y/o de clases?
 sidebar_position: 7

@@ -1,5 +1,5 @@
 ---
-id: reactjs-eventos
+id: eventos
 Titule: 9. Eventos
 sidebar_position: 9
 description: ¿Cómo ReactJS actua antes los diversos eventos de una sitio web?

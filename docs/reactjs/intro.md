@@ -2,7 +2,7 @@
 sidebar_position: 1
 author : jeogarod
 Title: React JS
-id: reactjs-intro
+id: intro
 description: Curso orientado a la implementación de aplicativos y/o proyectos en React JS haciendo uso de Vite
 ---
 

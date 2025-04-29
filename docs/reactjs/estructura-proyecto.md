@@ -1,5 +1,5 @@
 ---
-id: reactjs-estructura-proyecto
+id: estructura-proyecto
 title: 3. Estructura de un proyecto
 description: Explicación sobre la estructura de un proyecto y/o aplicativo ReactJS haciendo uso de Vite
 sidebar_position: 3

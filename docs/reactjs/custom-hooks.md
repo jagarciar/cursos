@@ -1,5 +1,5 @@
 ---
-id: reactjs-custom-hooks
+id: custom-hooks
 title: 12. Custom hooks
 sidebar_position: 12
 author: jeogarod

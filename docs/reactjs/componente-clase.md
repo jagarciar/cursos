@@ -1,5 +1,5 @@
 ---
-id: reactjs-componentes-clase
+id: componentes-clase
 title: 5. Componentes de clase
 sidebar_position: 5
 author: jeogarod

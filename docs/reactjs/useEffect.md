@@ -1,5 +1,5 @@
 ---
-id: reactjs-useEffect
+id: useEffect
 title: 11. useEffect
 sidebar_position: 11
 author: jeogarod

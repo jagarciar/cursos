@@ -1,5 +1,5 @@
 ---
-id: reactjs-componentes-funcional
+id: componentes-funcional
 title: 5. Componentes funcionales
 sidebar_position: 4
 author: jeogarod
