@@ -1,3 +1,8 @@
+api-rest:
+  label: 'API REST'
+  permalink: '/about-api-rest'
+  description: 'Tutoriales donde se menciona la palabra API REST'
+
 
 componente-clase:
   label: 'Componente de clase'

@@ -162,6 +162,53 @@ export const Pokemon = () => {
     );
 }
 ```
+:::tip
+En dado caso el **método HTTP** de la **API REST** no sea **GET** es necesario crear una variable **options** que debe ser enviada a la función **fetch**.
+:::
+
+En el siguiente ejemplo, nuestro **hook** **useFetch** recibe tres parámetros : **url**, **method** y **bodyData**. El parámetro **url** representa el endpoint de la **API REST**. El parámetro **method** representa el **método HTTP** (**GET**, **POST**, **PUT**, **DELETE**). El parámetro **bodyData** representa el contenido que debe ser enviado única y opcionalmente en una petición **POST** o **PUT**. 
+
+El **hook** **useFetch** definió en un **useEffect** el llamado a la **API REST**. En el llamado a la función **fetch** se envía la **url** y un objeto nombrado **options**. El objeto **options** tiene tres propiedades : **method**, **headers** y **body**. En la propiedad **method** se almacenará el **método HTTP**. En la propiedad **headers** se incluirá el atributo **Content-type** para definir que la petición y la respuesta serán bajo **JSON**. En la propiedad **body** se almacenará el valor de la variable **bodyData**. 
+
+```javascript title="/src/FetchHook.jsx"
+import { useState, useEffect } from 'react';
+
+export const useFetch = (url, method, bodyData = null) => {
+  const [data, setData] = useState(null);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const options = {
+          method: method,
+          headers:{
+            'Content-type':'application/json; charset=UTF-8'
+          },
+          body: method == 'GET' || method == 'DELETE' ? null : JSON.stringify(bodyData)
+        }
+        const response = await fetch(url, options);
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        const result = await response.json();
+        setData(result);
+      } catch (error) {
+        setError(error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchData();
+  }, [url]);
+
+  return { data, loading, error };
+}
+```
+
+
 
 ## useLocalStorage
 
