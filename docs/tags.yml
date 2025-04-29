@@ -39,6 +39,11 @@ jsx:
   permalink: '/about-jsx'
   description: 'Tutoriales donde se menciona la palabra JSX'
 
+memorizacion:
+  label: 'Memorización'
+  permalink: '/about-memorizacion'
+  description: 'Tutoriales donde se menciona la palabra memorización'
+
 npm:
   label: 'NPM'
   permalink: '/about-npm'
@@ -59,6 +64,11 @@ reactjs:
   permalink: '/about-react-js'
   description: 'Tutoriales donde se menciona la palabra reactjs'
 
+useCallback:
+  label: 'useCallback'
+  permalink: '/about-useCallback'
+  description: 'Tutoriales donde se menciona la palabra useCallback'
+
 useEffect:
   label: 'useEffect'
   permalink: '/about-useEffect'
@@ -73,6 +83,11 @@ useForm:
   label: 'useForm'
   permalink: '/about-useForm'
   description: 'Tutoriales donde se menciona la palabra useForm'
+
+useMemo:
+  label: 'useMemo'
+  permalink: '/about-useMemo'
+  description: 'Tutoriales donde se menciona la palabra useMemo'
 
 useRef:
   label: 'useRef'
