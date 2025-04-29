@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunkcursos=self.webpackChunkcursos||[]).push([[2240],{3964:s=>{s.exports=JSON.parse('{"metadata":{"permalink":"/cursos/blog","page":1,"postsPerPage":10,"totalPages":1,"totalCount":2,"blogDescription":"Blog","blogTitle":"Blog"}}')}}]);
