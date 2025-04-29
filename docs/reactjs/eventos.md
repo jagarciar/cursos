@@ -1,9 +1,9 @@
 ---
-id: eventos
+id: reactjs-eventos
 Titule: 9. Eventos
 sidebar_position: 9
 description: ¿Cómo ReactJS actua antes los diversos eventos de una sitio web?
-author: Jeyson Andrés García Rodríguez
+author: jeogarod
 tags:
   - react
   - reactjs
@@ -50,7 +50,7 @@ export const EventApp = () => {
 En el siguiente ejemplo creamos un componente funcional llamado **Event**. Este componente contiene una caja de texto. El valor de la caja de texto puede variar. El evento invoca la función **handleChange** que esta implementada previo a cada que se adiciiona eliminan o elementos sobre el valor de la caja de texto. 
 
 ***tip
-¿Quieres entender un poco más este ejemplo? :) Primero debe ir a leer el tutorial [10. useState](./useState).
+¿Quieres entender un poco más este ejemplo? :) Primero debe ir a leer el tutorial [10. useState](/docs/reactjs/useState.md).
 :::
 
 En el siguiente ejemplo tenemos un botón que llama a la función **handleChange**. Esta función **handleChange** recibe el parámetro **event** y debe ser desclarado antes del return el componente funcional. 

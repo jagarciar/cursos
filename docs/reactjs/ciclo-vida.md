@@ -1,5 +1,5 @@
 ---
-id: ciclo-vida
+id: reactjs-ciclo-vida
 title: 13. Ciclo de vida
 sidebar_position: 13
 author: jeogarod
@@ -54,7 +54,7 @@ createRoot(document.getElementById('root')).render(
 )
 ```
 
-Una vez que el componente ha sido renderizado inicialmente, puede desencadenar más renderizados **actualizando su estado** con la función **set**. Al actualizar el estado de tu componente, se pone en cola automáticamente un renderizado. Recordemos que la función **set** hace parte de la definición de [useState](./useState). 
+Una vez que el componente ha sido renderizado inicialmente, puede desencadenar más renderizados **actualizando su estado** con la función **set**. Al actualizar el estado de tu componente, se pone en cola automáticamente un renderizado. Recordemos que la función **set** hace parte de la definición de [useState](/docs/reactjs/useState.md). 
 
 Este proceso es recursivo: si el componente actualizado devuelve algún otro componente, React renderizará ese componente a continuación, y si ese componente también devuelve algo, renderizará ese componente a continuación, y así sucesivamente. El proceso continuará hasta que no haya más componentes anidados y React sepa exactamente qué debe mostrarse en pantalla.
 

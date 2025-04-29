@@ -1,5 +1,5 @@
 ---
-id: crear
+id: reactjs-crear-proyecto
 title: 2. Creación de un proyecto
 author: jeogarod
 description: Creación de un proyecto y/o aplicativo ReactJS haciendo uso de Vite

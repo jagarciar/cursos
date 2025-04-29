@@ -1,7 +1,8 @@
 ---
 sidebar_position: 1
-author : Jeyson Andrés García Rodríguez
+author : jeogarod
 Title: React JS
+id: reactjs-intro
 description: Curso orientado a la implementación de aplicativos y/o proyectos en React JS haciendo uso de Vite
 ---
 

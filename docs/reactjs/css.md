@@ -1,9 +1,9 @@
 ---
-id: css
+id: reactjs-css
 Title: 7. CSS
 description: ¿Cómo poder modificar los estilos de los componnetes funcionales y/o de clases?
 sidebar_position: 7
-author: Jeyson Andrés García Rodríguez
+author: jeogarod
 tags:
   - react
   - reactjs
@@ -18,7 +18,7 @@ last_update:
 
 # 7. CSS
 
-Durante la creación de un proyecto en **React** por defecto haciendo uso de **Vite** se crean diferentes archivos y carpetas que fueron explicados en el tutorial [Estructura de un proyecto](./estructura). Dentro de los archivos por defecto que son creados se encuentran algunos con extensión **.css**. Este tipo de archivos contienen la definición de **estilos** de nuestros componentes. 
+Durante la creación de un proyecto en **React** por defecto haciendo uso de **Vite** se crean diferentes archivos y carpetas que fueron explicados en el tutorial [Estructura de un proyecto](/docs/reactjs/estructura-proyecto.md). Dentro de los archivos por defecto que son creados se encuentran algunos con extensión **.css**. Este tipo de archivos contienen la definición de **estilos** de nuestros componentes. 
 
 El archivo **/src/index.css** creado por defecto contiene la definición de los estilos para toda la aplicación y/o proyecto. Sin embargo, **React** permite que también existan definiciones de estilos por cada componente y nos lo demuestra con el archivo **/src/App.css**. 
 

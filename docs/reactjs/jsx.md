@@ -1,8 +1,8 @@
 ---
-id: jsx
+id: reactjs-jsx
 Titule: 6. JSX
 description: ¿Qué es JSX? ¿Qué relación existe entre JSX y React?
-author: Jeyson Andrés García Rodríguez
+author: jeogarod
 sidebar_position: 6
 tags:
   - react
