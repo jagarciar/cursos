@@ -1,7 +1,7 @@
 ---
 id: custom-hooks
-title: 12. Custom hooks
-sidebar_position: 12
+title: 13. Custom hooks
+sidebar_position: 13
 author: jeogarod
 description: ¿Qué son los custom hooks? ¿En qué se diferencian con los hooks?
 tags:
@@ -19,7 +19,7 @@ last_update:
   author: Jeyson Andrés García Rodríguez
 ---
 
-# 12. Custom hooks
+# 13. Custom hooks
 
 Un **Custom Hook** es una **función JavaScript** que utiliza otros **Hooks** de React para encapsular lógica de manera que pueda ser reutilizada en varios componentes. Estos hooks no son más que una extensión de los hooks estándar de React, como useRef, [useState](/docs/reactjs/useState.md) o [useEffect](/docs/reactjs/useEffect.md), permitiéndonos crear nuestra propia lógica que puede ser compartida y reutilizada en varios componentes. Es como un contenedor para la lógica de estado y efectos, permitiendo su reuso sin duplicar código.
 

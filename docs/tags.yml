@@ -74,6 +74,11 @@ useForm:
   permalink: '/about-useForm'
   description: 'Tutoriales donde se menciona la palabra useForm'
 
+useRef:
+  label: 'useRef'
+  permalink: '/about-useRef'
+  description: 'Tutoriales donde se menciona la palabra useRef'
+
 useState:
   label: 'useState'
   permalink: '/about-useState'

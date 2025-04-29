@@ -1,7 +1,7 @@
 ---
 id: ciclo-vida
-title: 13. Ciclo de vida
-sidebar_position: 13
+title: 14. Ciclo de vida
+sidebar_position: 14
 author: jeogarod
 description: ¿Qué es renderizar un componente? ¿Cada cuánto se renderiza?
 tags:
@@ -18,7 +18,7 @@ last_update:
   author: Jeyson Andrés García Rodríguez
 ---
 
-# 13. Ciclo de vida
+# 14. Ciclo de vida
 
 El **ciclo de vida** (life cycle) de un componente, representa las **etapas** por las que un componente pasa durante toda su vida, desde la **creación** hasta que es **destruido**. Conocer el ciclo de vida de un componente es muy importante debido a que nos permite saber cómo es que un componente se comporta durante todo su tiempo de vida y nos permite prevenir la gran mayoría de los errores que se provocan en tiempo de ejecución.
 
