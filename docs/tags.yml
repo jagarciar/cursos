@@ -103,6 +103,11 @@ useCallback:
   permalink: '/about-useCallback'
   description: 'Tutoriales donde se menciona la palabra useCallback'
 
+useCounter:
+  label: 'useCounter'
+  permalink: '/about-useCounter'
+  description: 'Tutoriales donde se menciona la palabra useCounter'
+
 useEffect:
   label: 'useEffect'
   permalink: '/about-useEffect'
@@ -122,6 +127,11 @@ useMemo:
   label: 'useMemo'
   permalink: '/about-useMemo'
   description: 'Tutoriales donde se menciona la palabra useMemo'
+
+useLocalStorage:
+  label: 'useLocalStorage'
+  permalink: '/about-useLocalStorage'
+  description: 'Tutoriales donde se menciona la palabra useLocalStorage'
 
 useReducer:
   label: 'useReducer'
