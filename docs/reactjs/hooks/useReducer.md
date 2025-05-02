@@ -1,9 +1,9 @@
 ---
 id: useReducer
-title: 6. useReducer
-sidebar_position: 6
+title: 7. useReducer
+sidebar_position: 7
 author: jeogarod
-description: ¿Qué es useReducer? ¿Qué es un reducer?
+description: useReducer es un hook en ReactJS que permite gestionar el estado de un componente
 tags:
   - react
   - reactjs
@@ -21,7 +21,7 @@ last_update:
   author: Jeyson Andrés García Rodríguez
 ---
 
-# 6. useReducer
+# 7. useReducer
 
 Es una función que especifica cómo el **estado de una aplicación** debe cambiar en respuesta a una acción enviada a través de un **dispatch**. Un **reducer** toma el **estado actual** y una **acción** como **argumentos** y **devuelve** un **nuevo estado** que refleja como debería cambiar el estado de la aplicación en respuesta a esa acción específica. 
 

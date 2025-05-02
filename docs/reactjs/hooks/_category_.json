@@ -3,6 +3,8 @@
   "description": "Uso y/o implementación de hooks en ReactJS",
   "position": 2,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "slug": "/reactjs/hooks",
+    "keywords": ["hooks","useState","useEffect", "useRef","useMemo","useCallback","useFetch", "useForm","useReducer","useLocalStorage", "useCounter","Ciclo de vida","Estado"]
   }
 }

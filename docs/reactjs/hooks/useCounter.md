@@ -3,7 +3,7 @@ id: useCounter
 title: 8. useCounter
 sidebar_position: 8
 author: jeogarod
-description: useForm es un hook de ReactJS que nos apoya durante la gestión del estado de un formulario
+description: useCounter es un hook en ReactJS que permite estandarizar el uso de contadores en los componentes
 tags:
   - react
   - reactjs

@@ -2,6 +2,8 @@
   "label": "Frameworks",
   "position": 3,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "slug": "/reactjs/frameworks",
+    "keywords": ["JSX","CSS","Redux"]
   }
 }

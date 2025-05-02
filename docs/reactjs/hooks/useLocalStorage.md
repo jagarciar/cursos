@@ -18,7 +18,7 @@ last_update:
   author: Jeyson Andrés García Rodríguez
 ---
 
-# useLocalStorage
+# 10. useLocalStorage
 
 Otro de los hooks que uso frecuentemente es uno que facilita la manipulación del **local storage** del navegador. A continuación podremos ver que se creó el **hook** **useLocalStorage** el cuál recibe dos parámetros : **key** e **initialValue**. El **hook** **useLocalStorage** tiene una variable de estado : **storedValue** la cuál puede ser actualizada a través de la función **setStoredValue**. 
 
