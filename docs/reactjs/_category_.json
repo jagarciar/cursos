@@ -2,6 +2,8 @@
   "label": "React JS",
   "position": 1,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "slug": "/reactjs",
+    "keywords": ["Componentes","Componente funcional","Componente de clase","Eventos","Props"]
   }
 }
