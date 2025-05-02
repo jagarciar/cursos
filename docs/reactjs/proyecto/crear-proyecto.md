@@ -1,6 +1,6 @@
 ---
 id: crear-proyecto
-title: 2. Creación de un proyecto
+title: 1. Creación
 author: jeogarod
 description: Creación de un proyecto y/o aplicativo ReactJS haciendo uso de Vite
 sidebar_position: 2
@@ -14,7 +14,7 @@ last_update:
   author: Jeyson Andrés García Rodríguez
 ---
 
-# 2. Creación de un proyecto
+# 1. Creación
 
 Basados en las recomendaciones que realizan en diversos sitios web, todos los ejercicios que serán propuestos en este curso se apoyaran de un framework. Los frameworks de **React** resuelven problemas comúnes sin necesidad de realizar trabajos adicionales. Por ejemplo : dan solución a la lentitud de la aplicación, al enrutamiento, entre otras. Es posible que un conjunto de desarrolladores decidan no optar por el uso de un framework a la hora de desarrollar un aplicativo **React**, sin embargo, podrían tomar un poco más de tiempo dando solución a estos inconvenientes que ya fueron solucionados y puestos en una librería adicional (framework).  
 

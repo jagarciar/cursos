@@ -1,9 +1,9 @@
 ---
 author: jeogarod
 id: props
-sidebar_position: 8
+sidebar_position: 5
 description: ¿Qué son las Props? ¿Por qué son importantes las Props en React?
-title: 8. Props
+title: 5. Props
 tags:
   - react
   - reactjs
@@ -17,7 +17,7 @@ last_update:
   author: Jeyson Andrés García Rodríguez
 ---
 
-# 8. Props
+# 5. Props
 
 Los componentes de **React** utilizan **props** para comunicarse entre sí. Cada componente padre puede enviar información a sus componentes hijos mediante el uso de props. Las **props** pueden parecerte similares a los atributos **HTML**, pero permiten pasar cualquier valor de **JavaScript** a través de ellas, como objetos, arrays y funciones.
 

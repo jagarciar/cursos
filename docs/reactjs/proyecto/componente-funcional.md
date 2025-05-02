@@ -1,6 +1,6 @@
 ---
 id: componentes-funcional
-title: 5. Componentes funcionales
+title: 4. Componentes funcionales
 sidebar_position: 4
 author: jeogarod
 description: Creación de un componente funcional.

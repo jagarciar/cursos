@@ -3,6 +3,10 @@ api-rest:
   permalink: '/about-api-rest'
   description: 'Tutoriales donde se menciona la palabra API REST'
 
+ciclo-vida:
+  label: 'Ciclo de vida'
+  permalink: '/about-ciclo-vida'
+  description: 'Tutoriales donde se menciona la palabra ciclo de vida'
 
 componente-clase:
   label: 'Componente de clase'
@@ -24,6 +28,16 @@ css:
   permalink: '/about-css'
   description: 'Tutoriales donde se menciona la palabra css'
 
+desmontaje:
+  label: 'Desmontaje'
+  permalink: '/about-desmontaje'
+  description: 'Tutoriales donde se menciona la palabra desmontaje'
+
+estado:
+  label: 'Estado'
+  permalink: '/about-estado'
+  description: 'Tutoriales donde se menciona la palabra estado'
+
 export:
   label: 'export'
   permalink: '/about-export'
@@ -44,6 +58,11 @@ memorizacion:
   permalink: '/about-memorizacion'
   description: 'Tutoriales donde se menciona la palabra memorización'
 
+montaje:
+  label: 'Montaje'
+  permalink: '/about-montaje'
+  description: 'Tutoriales donde se menciona la palabra montaje'
+
 npm:
   label: 'NPM'
   permalink: '/about-npm'
@@ -63,6 +82,21 @@ reactjs:
   label: 'React JS'
   permalink: '/about-react-js'
   description: 'Tutoriales donde se menciona la palabra reactjs'
+
+reducer:
+  label: 'Reducer'
+  permalink: '/about-reducer'
+  description: 'Tutoriales donde se menciona la palabra reducer'
+
+redux:
+  label: 'Redux'
+  permalink: '/about-redux'
+  description: 'Tutoriales donde se menciona la palabra redux'
+
+renderizado:
+  label: 'Renderizado'
+  permalink: '/about-renderizado'
+  description: 'Tutoriales donde se menciona la palabra renderizado'
 
 useCallback:
   label: 'useCallback'
@@ -88,6 +122,11 @@ useMemo:
   label: 'useMemo'
   permalink: '/about-useMemo'
   description: 'Tutoriales donde se menciona la palabra useMemo'
+
+useReducer:
+  label: 'useReducer'
+  permalink: '/about-useReducer'
+  description: 'Tutoriales donde se menciona la palabra useReducer'
 
 useRef:
   label: 'useRef'

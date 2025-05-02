@@ -1,7 +1,7 @@
 ---
 id: eventos
-Titule: 9. Eventos
-sidebar_position: 9
+Titule: 6. Eventos
+sidebar_position: 6
 description: ¿Cómo ReactJS actua antes los diversos eventos de una sitio web?
 author: jeogarod
 tags:
@@ -16,7 +16,7 @@ last_update:
   author: Jeyson Andrés García Rodríguez
 ---
 
-# 9. Eventos
+# 6. Eventos
 
 React te permite añadir **controladores de eventos** a tu **JSX**. Los **controladores de eventos** son tus propias funciones que se ejecutarán en respuesta a interacciones como hacer **clic**, **hover**, **enfocar inputs** en **formularios**, entre otras.
 
@@ -50,7 +50,7 @@ export const EventApp = () => {
 En el siguiente ejemplo creamos un componente funcional llamado **Event**. Este componente contiene una caja de texto. El valor de la caja de texto puede variar. El evento invoca la función **handleChange** que esta implementada previo a cada que se adiciiona eliminan o elementos sobre el valor de la caja de texto. 
 
 ***tip
-¿Quieres entender un poco más este ejemplo? :) Primero debe ir a leer el tutorial [10. useState](/docs/reactjs/useState.md).
+¿Quieres entender un poco más este ejemplo? :) Primero debe ir a leer el tutorial [10. useState](/docs/reactjs/hooks/useState.md).
 :::
 
 En el siguiente ejemplo tenemos un botón que llama a la función **handleChange**. Esta función **handleChange** recibe el parámetro **event** y debe ser desclarado antes del return el componente funcional. 

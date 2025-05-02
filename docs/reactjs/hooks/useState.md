@@ -1,7 +1,7 @@
 ---
 id: useState
-Titule: 10. useState
-sidebar_position: 10
+Titule: 1. useState
+sidebar_position: 1
 description: ¿Qué es el estado en un aplicativo ReactJS? ¿Cómo almacenarlo? ¿Como actualizarlo?
 author: jeogarod
 tags:
@@ -12,12 +12,13 @@ tags:
   - vite
   - useState
   - hooks
+  - estado
 last_update:
   date: 04/24/2025
   author: Jeyson Andrés García Rodríguez
 ---
 
-# 10. useState
+# 1. useState
 
 Los componentes a menudo necesitan cambiar lo que se muestra en pantalla como resultado de una interacción. Escribir dentro de un formulario debería actualizar el campo de texto, hacer clic en “siguiente” en un carrusel de imágenes debería cambiar la imagen que es mostrada; hacer clic en un botón para comprar un producto debería actualizar el carrito de compras. En los ejemplos anteriores los componentes deben “recordar” cosas: el campo de texto, la imagen actual, el carrito de compras. En React, a este tipo de memoria de los componentes se le conoce como **estado**.
 

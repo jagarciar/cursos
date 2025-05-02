@@ -1,0 +1,8 @@
+{
+  "label": "Proyectos",
+  "description" : "Creación, estructrura y principales definiciones sobre un proyecto de ReactJS",
+  "position": 1,
+  "link": {
+    "type": "generated-index"
+  }
+}

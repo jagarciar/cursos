@@ -1,7 +1,7 @@
 ---
 id: componentes-clase
-title: 5. Componentes de clase
-sidebar_position: 5
+title: 3. Componentes de clase
+sidebar_position: 3
 author: jeogarod
 description: ¿Qué es un componente de clase?
 tags:
@@ -16,7 +16,7 @@ last_update:
   author: Jeyson Andrés García Rodríguez
 ---
 
-# 5. Componentes de clase
+# 3. Componentes de clase
 
 **React** es una biblioteca de **JavaScript** para renderizar **interfaces de usuario** (**UI** por sus siglas en inglés). La **UI** se construye a partir de pequeñas unidades como botones, texto e imágenes. **React** te permite combinarlas en **componentes reutilizables** y anidables. **React** clasifica los componentes en : **componentes funcionales** y **componentes de clase**.
 

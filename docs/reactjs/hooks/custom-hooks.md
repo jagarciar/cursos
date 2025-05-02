@@ -1,7 +1,7 @@
 ---
 id: custom-hooks
-title: 15. Custom hooks
-sidebar_position: 15
+title: 7. Custom hooks
+sidebar_position: 7
 author: jeogarod
 description: ¿Qué son los custom hooks? ¿En qué se diferencian con los hooks?
 tags:
@@ -19,9 +19,9 @@ last_update:
   author: Jeyson Andrés García Rodríguez
 ---
 
-# 15. Custom hooks
+# 7. Custom hooks
 
-Un **Custom Hook** es una **función JavaScript** que utiliza otros **Hooks** de React para encapsular lógica de manera que pueda ser reutilizada en varios componentes. Estos hooks no son más que una extensión de los hooks estándar de React, como useRef, [useState](/docs/reactjs/useState.md) o [useEffect](/docs/reactjs/useEffect.md), permitiéndonos crear nuestra propia lógica que puede ser compartida y reutilizada en varios componentes. Es como un contenedor para la lógica de estado y efectos, permitiendo su reuso sin duplicar código.
+Un **Custom Hook** es una **función JavaScript** que utiliza otros **Hooks** de React para encapsular lógica de manera que pueda ser reutilizada en varios componentes. Estos hooks no son más que una extensión de los hooks estándar de React, como useRef, [useState](/docs/reactjs/hooks/useState.md) o [useEffect](/docs/reactjs/hooks/useEffect.md), permitiéndonos crear nuestra propia lógica que puede ser compartida y reutilizada en varios componentes. Es como un contenedor para la lógica de estado y efectos, permitiendo su reuso sin duplicar código.
 
 :::tip
 La **gestión de estados** es uno de los casos de uso más comunes para los **custom hooks** en React. Estos permiten crear **manejadores de estado** que son reutilizables entre diferentes componentes. Por ejemplo, un custom hook podría manejar la lógica de un formulario, almacenando y actualizando valores de los campos de manera eficiente. Esto resulta en un código más limpio y modular, facilitando la mantenibilidad y escalabilidad de las aplicaciones.
@@ -136,7 +136,7 @@ export const useFetch = (url) => {
 ```
 
 :::danger
-No debes llamar a **Hooks** como [useState](/docs/reactjs/useState.md) o [useEffect](/docs/reactjs/useEffect.md) condicionalmente o dentro de ciclos o funciones anidadas. Siempre deben ser utilizados en el nivel superior de tu componente o **Hook personalizado**. Esto asegura que los Hooks se ejecuten en el mismo orden cada vez que tu componente se renderiza, lo cual es crucial para el correcto funcionamiento de React.
+No debes llamar a **Hooks** como [useState](/docs/reactjs/hooks/useState.md) o [useEffect](/docs/reactjs/hooks/useEffect.md) condicionalmente o dentro de ciclos o funciones anidadas. Siempre deben ser utilizados en el nivel superior de tu componente o **Hook personalizado**. Esto asegura que los Hooks se ejecuten en el mismo orden cada vez que tu componente se renderiza, lo cual es crucial para el correcto funcionamiento de React.
 :::
 
 Finalmente solo necesitamos reutilizar el **hook** **useFetch** en algún componente que lo requiera:
@@ -268,7 +268,7 @@ export const Pokemon = () => {
 
 ## useForm
 
-En el tutorial [Eventos](/docs/reactjs/eventos.md) se explicó el evento **onChange** que debe ser incrustado por cada elemento **HTML** que requiera actualizar el valor del campo con un valor de la variable de estado. 
+En el tutorial [Eventos](/docs/reactjs/proyecto/eventos.md) se explicó el evento **onChange** que debe ser incrustado por cada elemento **HTML** que requiera actualizar el valor del campo con un valor de la variable de estado. 
 
 :::tip
 Un campo de un formulario cuyos valores son controlados por React es denominado “
