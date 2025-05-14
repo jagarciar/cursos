@@ -1,7 +1,7 @@
 ---
 id: flux
 Titule: Flux
-description: 
+description: Flux es un patrón de arquitectura de datos para aplicaciones web que permiten gestionar el estado.
 author: jeogarod
 sidebar_position: 1
 tags:
