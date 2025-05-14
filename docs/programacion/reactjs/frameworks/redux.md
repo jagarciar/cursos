@@ -153,26 +153,8 @@ createRoot(document.getElementById('root')).render(
 ## Vista
 
 :::tip
-Antes de la introducción de **Redux Hooks**, como **useDispatch** en **React Redux** y **useSelector**, los desarrolladores solían utilizar la función **connect** para conectar **componentes** de **React** al **almacén** de **Redux**. Aunque **connect** cumplía su propósito, a menudo resultaba en un código más complicado de mantener. Con la adopción de **hooks**, como el **useDispatch** en React Redux, se ha vuelto mucho más sencillo lograr la misma funcionalidad de una manera más eficiente y concisa.
+Antes de la introducción de **Redux Hooks**, como **useDispatch** en **React Redux** y [**useSelector**](/docs/programacion/reactjs/hooks/useSelector.md), los desarrolladores solían utilizar la función **connect** para conectar **componentes** de **React** al **almacén** de **Redux**. Aunque **connect** cumplía su propósito, a menudo resultaba en un código más complicado de mantener. Con la adopción de **hooks**, como el [**useDispatch**](/docs/programacion/reactjs/hooks/useDispatch.md) en React Redux, se ha vuelto mucho más sencillo lograr la misma funcionalidad de una manera más eficiente y concisa.
 :::
-
-### useSelector
-
-En el contexto de **Redux**, **useSelector** es una herramienta crucial que permite a los componentes de React acceder al **estado global** almacenado en el **store** de **Redux**. El hook **useSelector** es una función que recibe el **estado** y *devuelve un valor derivado* del **estado**. Esto facilita la obtención de datos específicos de la aplicación y su renderización en el componente.
-
-Para nuestro ejemplo, el **hook** **useSelector** va permitir que la variable **estudiantes** contenga una referencia al estado, en especifico el arreglo de **estudiantes**. 
-
-```javascript
-const estudiantes = useSelector(state => state.estudiantes)
-```
-
-### useDispatch
-
-El **useDispatch** en **Redux** simplifica el flujo de acciones al permitirle a los desarrolladores **enviar acciones directamente desde el componente**, sin necesidad de crear funciones adicionales o componentes de orden superior. Esto resulta en un código más limpio y legible, además de reducir la complejidad general de la aplicación.
-
-```javascript
-const dispatch = useDispatch();
-```
 
 Para nuestro ejemplo vamos a crear tres componentes funcionales : **FormEstudiante**,  **ListEstudiantes** y **AppEstudiantes**.  
 
