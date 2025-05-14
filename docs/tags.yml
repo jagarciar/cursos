@@ -118,6 +118,11 @@ useCallback:
   permalink: '/about-useCallback'
   description: 'Tutoriales donde se menciona la palabra useCallback'
 
+useContext:
+  label: 'useContext'
+  permalink: '/about-useContext'
+  description: 'Tutoriales donde se menciona la palabra useContext'
+
 useCounter:
   label: 'useCounter'
   permalink: '/about-useCounter'
