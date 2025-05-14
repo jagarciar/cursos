@@ -10,6 +10,7 @@ tags:
   - createRoot
   - npm
   - vite
+  - react-router-dom
 last_update:
   date: 04/15/2025
   author: Jeyson Andrés García Rodríguez

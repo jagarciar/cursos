@@ -93,6 +93,11 @@ react:
   permalink: '/about-react'
   description: 'Tutoriales donde se menciona la palabra react'
 
+react-router-dom:
+  label: 'React Router DOM'
+  permalink: '/about-react-router-dom'
+  description: 'Tutoriales donde se menciona la palabra react-router-dom'
+
 reactjs:
   label: 'React JS'
   permalink: '/about-react-js'
