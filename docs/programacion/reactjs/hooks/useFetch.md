@@ -1,9 +1,9 @@
 ---
 id: useFetch
-title: 9. useFetch
+title: useFetch
 sidebar_position: 9
 author: jeogarod
-description: useFetch es un hook de ReactJS que permite invocar o consumir API's
+description: En este tutorial vamos hacer uso del hook useFetch para consumir API's en un proyecto ReactJS
 tags:
   - react
   - reactjs
@@ -18,7 +18,7 @@ last_update:
   author: Jeyson Andrés García Rodríguez
 ---
 
-# 9. useFetch
+# useFetch
 
 En el siguiente ejemplo creamos un **custom hook** nombrado **useFetch** en el archivo **/src/FetchHook.jsx**. El **hook** **useFetch** recibe un parámetro nombrado **url** y tiene tres variables de estado : **data**, **loading** y **error**. Por cada variable de estado, el **hook** define tres funciones : **setData**, **setLoading** y **setError**. 
 

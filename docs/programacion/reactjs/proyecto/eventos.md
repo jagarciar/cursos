@@ -1,8 +1,8 @@
 ---
 id: eventos
-Titule: 6. Eventos
+Titule: Eventos
 sidebar_position: 6
-description: ¿Cómo ReactJS actua antes los diversos eventos de una sitio web?
+description: En este tutorial vamos a entender qué significa un evento y cómo se relaciona un evento con un componente funcional
 author: jeogarod
 tags:
   - react
@@ -16,7 +16,7 @@ last_update:
   author: Jeyson Andrés García Rodríguez
 ---
 
-# 6. Eventos
+# Eventos
 
 React te permite añadir **controladores de eventos** a tu **JSX**. Los **controladores de eventos** son tus propias funciones que se ejecutarán en respuesta a interacciones como hacer **clic**, **hover**, **enfocar inputs** en **formularios**, entre otras.
 

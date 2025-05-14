@@ -1,9 +1,9 @@
 ---
 id: useEffect
-title: 3. useEffect
+title: useEffect
 sidebar_position: 3
 author: jeogarod
-description: useEffect es un hook en ReactJS que permite ejecutar una función después del renderizado de un componente
+description: En este tutorial vamos hacer uso del hook useEffect para actualizar el estado de un componente en un proyecto ReactJS
 tags:
   - react
   - reactjs
@@ -21,7 +21,7 @@ last_update:
   author: Jeyson Andrés García Rodríguez
 ---
 
-# 3. useEffect
+# useEffect
 
 El **useEffect** en React es un tipo de hook que se incorporó en la versión de React 16.8. Como su nombre lo indica, este hook nos permite definir **efectos**. Los efectos en esta librería de JavaScript nos permiten ejecutar un trozo de código según el momento en el que se encuentre el **ciclo de vida** de nuestro componente. **useEffect** recibe como parámetro una función que se ejecutará cada vez que nuestro componente se renderice, ya sea por un **cambio de estado**, por **recibir props nuevas** o, y esto es importante, porque es la **primera vez que se monta**.
 

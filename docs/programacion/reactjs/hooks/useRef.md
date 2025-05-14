@@ -1,9 +1,9 @@
 ---
 id: useRef
-title: 4. useRef
+title: useRef
 sidebar_position: 4
 author: jeogarod
-description: useRef es un hook en ReactJS que permite obtener una referencia a un elemento del DOM
+description: En este tutorial vamos hacer uso del hook useRef para acceder a un elemento HTML a través del DOM
 tags:
   - react
   - reactjs
@@ -17,7 +17,7 @@ last_update:
   author: Jeyson Andrés García Rodríguez
 ---
 
-# 4. useRef
+# useRef
 
 El **hook** **useRef** es una función especial en **React** que permite a los desarrolladores acceder y **interactuar** con elementos del **DOM** de manera directa. A diferencia de otros enfoques en **React**, donde la **manipulación** del **DOM** se maneja principalmente a través del **estado** y las **props**, **useRef** proporciona una forma de referenciar elementos de manera más imperativa.
 

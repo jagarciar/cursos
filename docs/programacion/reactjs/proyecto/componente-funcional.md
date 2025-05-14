@@ -1,9 +1,9 @@
 ---
 id: componentes-funcional
-title: 4. Componentes funcionales
+title: Componentes funcionales
 sidebar_position: 4
 author: jeogarod
-description: Creación de un componente funcional.
+description: En este tutorial vamos a implementar un componente funcional en un proyecto ReactJS
 tags:
     - react
     - reactjs
@@ -16,7 +16,7 @@ last_update:
   author: Jeyson Andrés García Rodríguez
 ---
 
-# 4. Componentes funcionales
+# Componentes funcionales
 
 **React** es una biblioteca de **JavaScript** para renderizar **interfaces de usuario** (**UI** por sus siglas en inglés). La **UI** se construye a partir de pequeñas unidades como botones, texto e imágenes. **React** te permite combinarlas en **componentes reutilizables** y anidables. **React** clasifica los componentes en : **componentes funcionales** y **componentes de clase**.
 

@@ -1,7 +1,7 @@
 ---
 id: css
-Title: 2. CSS
-description: ¿Cómo poder modificar los estilos de los componnetes funcionales y/o de clases?
+Title: CSS
+description: En este tutorial vamos a modificar los estilos gráficos de nuestros componentes
 sidebar_position: 2
 author: jeogarod
 tags:
@@ -16,7 +16,7 @@ last_update:
   author: Jeyson Andrés García Rodríguez
 ---
 
-# 2. CSS
+# CSS
 
 Durante la creación de un proyecto en **React** por defecto haciendo uso de **Vite** se crean diferentes archivos y carpetas que fueron explicados en el tutorial [Estructura de un proyecto](/docs/programacion/reactjs/proyecto/estructura-proyecto.md). Dentro de los archivos por defecto que son creados se encuentran algunos con extensión **.css**. Este tipo de archivos contienen la definición de **estilos** de nuestros componentes. 
 

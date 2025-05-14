@@ -1,8 +1,8 @@
 ---
 id: useState
-Titule: 2. useState
+Titule: useState
 sidebar_position: 2
-description: useState es un hook en ReactJS que permite gestionar el estado de un componente
+description: En este tutorial vamos hacer uso del hook useState para almacenar y acceder a las variables de estado de un aplicativo o proyecto ReactJS
 author: jeogarod
 tags:
   - react
@@ -18,7 +18,7 @@ last_update:
   author: Jeyson Andrés García Rodríguez
 ---
 
-# 2. useState
+# useState
 
 Los componentes a menudo necesitan cambiar lo que se muestra en pantalla como resultado de una interacción. Escribir dentro de un formulario debería actualizar el campo de texto, hacer clic en “siguiente” en un carrusel de imágenes debería cambiar la imagen que es mostrada; hacer clic en un botón para comprar un producto debería actualizar el carrito de compras. En los ejemplos anteriores los componentes deben “recordar” cosas: el campo de texto, la imagen actual, el carrito de compras. En React, a este tipo de memoria de los componentes se le conoce como **estado**.
 

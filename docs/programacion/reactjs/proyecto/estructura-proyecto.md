@@ -1,7 +1,7 @@
 ---
 id: estructura-proyecto
-title: 2. Estructura
-description: Explicación sobre la estructura de un proyecto y/o aplicativo ReactJS haciendo uso de Vite
+title: Estructura
+description: En este tutorial vamos a descifrar qué carpetas y archivos fueron creados después de la creación de un proyecto ReactJS
 sidebar_position: 2
 author: jeogarod
 tags:
@@ -15,7 +15,7 @@ last_update:
   author: Jeyson Andrés García Rodríguez
 ---
 
-# 2. Estructura
+# ¿De qué está compuesto nuestro proyecto ReactJS?
 
 Fue creado previamente un proyecto y/o un aplicativo **ReactJS** haciendo uso de **Vite** como se explicó en el tutorial [2. Creación de un proyecto](/docs/programacion/reactjs/proyecto/crear-proyecto.md).
 

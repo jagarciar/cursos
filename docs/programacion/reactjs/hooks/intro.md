@@ -1,6 +1,6 @@
 ---
 id: intro-hooks
-Titule: 1. Introducción
+Titule: Introducción
 sidebar_position: 1
 description: En React los hooks permiten administrar el estado y otras funciones sin tener que escribir una clase.
 author: jeogarod
@@ -30,7 +30,7 @@ last_update:
   author: Jeyson Andrés García Rodríguez
 ---
 
-# 1. Introducción
+# Introducción
 
 En el mundo de la programación, los **hooks** son una herramienta clave para interactuar con el **ciclo de vida** de las aplicaciones de manera más flexible y eficiente. Estos elementos permiten la integración de funcionalidades adicionales sin modificar el código base, y promueven una mayor personalización y reutilización de componentes. 
 

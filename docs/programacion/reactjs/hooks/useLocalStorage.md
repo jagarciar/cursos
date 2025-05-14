@@ -1,9 +1,9 @@
 ---
 id: useLocalStorage
-title: 10. useLocalStorage
+title: useLocalStorage
 sidebar_position: 10
 author: jeogarod
-description: useLocalStorage es un hook de ReactJS que permite estandarizar el almacenamiento local o en caché de las variables de estado o de los elementos HTML
+description: En este tutorial vamos hacer uso del hook useLocalStorage para estandarizar el almacenamiento local o en caché en un proyecto ReactJS
 tags:
   - react
   - reactjs
@@ -13,12 +13,13 @@ tags:
   - useEffect
   - useFetch
   - hooks
+  - cache
 last_update:
   date: 04/24/2025
   author: Jeyson Andrés García Rodríguez
 ---
 
-# 10. useLocalStorage
+# useLocalStorage
 
 Otro de los hooks que uso frecuentemente es uno que facilita la manipulación del **local storage** del navegador. A continuación podremos ver que se creó el **hook** **useLocalStorage** el cuál recibe dos parámetros : **key** e **initialValue**. El **hook** **useLocalStorage** tiene una variable de estado : **storedValue** la cuál puede ser actualizada a través de la función **setStoredValue**. 
 

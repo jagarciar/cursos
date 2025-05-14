@@ -1,7 +1,7 @@
 ---
 id: redux
-Title: 3. Redux
-description: Redux
+Title: Redux
+description: En este tutorial vamos aprender a usar Redux en un proyecto ReactJS haciendo uso de los hooks useSelector y useDispatch. 
 sidebar_position: 3
 author: jeogarod
 tags:
@@ -22,7 +22,7 @@ last_update:
   author: Jeyson Andrés García Rodríguez
 ---
 
-# 3. Redux
+# Redux
 
 **Redux** es un contenedor de estado para aplicaciones JavaScript especialmente útil en el contexto de aplicaciones de **React**. Fue diseñado para gestionar el **estado** de la aplicación de una manera predecible y centralizada. 
 

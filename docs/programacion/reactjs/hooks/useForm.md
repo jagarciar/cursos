@@ -1,9 +1,9 @@
 ---
 id: useForm
-title: 7. useForm
+title: useForm
 sidebar_position: 7
 author: jeogarod
-description: useForm es un hook de ReactJS que nos apoya durante la gestión del estado de un formulario
+description: En este tutorial vamos hacer uso del hook useForm para estandarizar el uso de campos en formularios en proyectos ReactJS
 tags:
   - react
   - reactjs
@@ -19,7 +19,7 @@ last_update:
   author: Jeyson Andrés García Rodríguez
 ---
 
-# 7. useForm
+# useForm
 
 En el tutorial [Eventos](/docs/programacion/reactjs/proyecto/eventos.md) se explicó el evento **onChange** que debe ser incrustado por cada elemento **HTML** que requiera actualizar el valor del campo con un valor de la variable de estado. 
 

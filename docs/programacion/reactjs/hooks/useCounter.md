@@ -1,9 +1,9 @@
 ---
 id: useCounter
-title: 8. useCounter
+title: useCounter
 sidebar_position: 8
 author: jeogarod
-description: useCounter es un hook en ReactJS que permite estandarizar el uso de contadores en los componentes
+description: En este tutorial vamos hacer uso del hook useCounter para estandarizar el uso de contandores en proyectos ReactJS
 tags:
   - react
   - reactjs
@@ -19,7 +19,7 @@ last_update:
   author: Jeyson Andrés García Rodríguez
 ---
 
-# 8. useCounter
+# useCounter
 
 En el siguiente ejemplo creamos un **custom hook** nombrado **useCounter** en el archivo **/src/useCounter.js**. El **hook** **useCounter** recibe un parámetro nombrado **valorInicial** y tiene una variable de estado nombrada **contador** con su respectiva función **set** **setContador**. Adicionalmente el **hook** **useCounter** definió dos funciones : **incrementar** y **decrementar**. La función **incrementar** recibe un parámetro **valorIncremento** y su objetivo es incrementar el valor de la variable de estado **contador**. La función **decrementar** recibe un parámetro **valorDecremento** y su objetivo es reducir el valor de la variable **contador** (teniendo en cuenta que el valor de la variable **contador** no puede ser menor que 0).
 

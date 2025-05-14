@@ -1,7 +1,7 @@
 ---
 id: jsx
-Titule: 1. JSX
-description: ¿Qué es JSX? ¿Qué relación existe entre JSX y React?
+Titule: JSX
+description: En este tutorial vamos a entender la sintaxis extendida llamada JSX usada en ReactJS
 author: jeogarod
 sidebar_position: 1
 tags:
@@ -16,7 +16,7 @@ last_update:
   author: Jeyson Andrés García Rodríguez
 ---
 
-# 1. JSX
+# JSX
 
 Cada componente de **React** es una función de **JavaScript** que puede contener algo de marcado que **React** renderiza en el navegador. Los componentes de **React** utilizan una sintaxis extendida que se llama **JSX** para representar ese marcado. **JSX** se parece muchísimo a **HTML**, pero es un poco más estricto y puede mostrar información dinámica.
 

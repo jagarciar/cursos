@@ -6,7 +6,7 @@ id: intro
 description: Curso orientado a la implementación de aplicativos y/o proyectos en React JS haciendo uso de Vite
 ---
 
-# 1. Introducción
+# Introducción
 
 **React** es una de las bibliotecas **JavaScript** de **código abierto** más populares entre los desarrolladores **Front End**, programadores y testers de software creada por el equipo de la compañía Facebook (Meta). Te permite crear **interfaces de usuario interactivas**, ahorrando tiempo y reduciendo los costos de desarrollo. 
 

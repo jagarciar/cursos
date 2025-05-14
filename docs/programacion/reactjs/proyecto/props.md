@@ -2,8 +2,8 @@
 author: jeogarod
 id: props
 sidebar_position: 5
-description: ¿Qué son las Props? ¿Por qué son importantes las Props en React?
-title: 5. Props
+description: En este tutorial vamos a entender por qué son importantes las propiedades o argumentos de un componente funcional. 
+title: Props
 tags:
   - react
   - reactjs

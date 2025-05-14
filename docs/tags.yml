@@ -3,6 +3,11 @@ api-rest:
   permalink: '/about-api-rest'
   description: 'Tutoriales donde se menciona la palabra API REST'
 
+cache:
+  label: 'Almacenamiento local o en caché'
+  permalink: '/about-cache'
+  description: 'Tutoriales donde se menciona la palabra caché'
+
 ciclo-vida:
   label: 'Ciclo de vida'
   permalink: '/about-ciclo-vida'
