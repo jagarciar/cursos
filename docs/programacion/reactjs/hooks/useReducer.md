@@ -26,7 +26,7 @@ last_update:
 Es una función que especifica cómo el **estado de una aplicación** debe cambiar en respuesta a una acción enviada a través de un **dispatch**. Un **reducer** toma el **estado actual** y una **acción** como **argumentos** y **devuelve** un **nuevo estado** que refleja como debería cambiar el estado de la aplicación en respuesta a esa acción específica. 
 
 :::tip
-Aunque no es necesario usar **useReducer** para gestionar el estado en **React**, puede ser útil en situaciones donde el **estado** y las **transiciones** de **estado** son más complejadas o donde se necesita manejar lógica más avanzada que [**useState**](/docs/reactjs/hooks/useState.md) no puede cubrir facilmente.
+Aunque no es necesario usar **useReducer** para gestionar el estado en **React**, puede ser útil en situaciones donde el **estado** y las **transiciones** de **estado** son más complejadas o donde se necesita manejar lógica más avanzada que [**useState**](/docs/programacion/reactjs/hooks/useState.md) no puede cubrir facilmente.
 :::
 
 El **hook** **useReducer** está compuesto de un **estado inicial** y un **reducer** explicados a continuación:
@@ -74,9 +74,9 @@ export const ComponenteApp = () => {
 ```
 
 :::tip
-El nombre de **useReducer** da pie a confundirlo con [**Redux**](/docs/reactjs/frameworks/redux.md), pero en realidad son cosas completamente diferentes.
+El nombre de **useReducer** da pie a confundirlo con [**Redux**](/docs/programacion/reactjs/frameworks/redux.md), pero en realidad son cosas completamente diferentes.
 
-**useReducer** es un **hook** de **React** para **actualizar** un **estado** interno por medio de una función llamada **reducer**. [**Redux**](/docs/reactjs/frameworks/redux.md) es una **arquitectura** que nos permite **abstraer** el manejo de un **estado** global en una aplicación.
+**useReducer** es un **hook** de **React** para **actualizar** un **estado** interno por medio de una función llamada **reducer**. [**Redux**](/docs/programacion/reactjs/frameworks/redux.md) es una **arquitectura** que nos permite **abstraer** el manejo de un **estado** global en una aplicación.
 :::
 
 Supongamos el siguiente ejemplo:

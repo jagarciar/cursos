@@ -28,5 +28,5 @@ last_update:
 3. Para especificar cómo el estado de la aplicación cambia en respuesta a una acción, se utiliza una función llamada **reducer**. Un **reducer** toma el estado actual y una acción como argumentos y devuelve un nuevo **estado**. 
 
 :::tip
-**React** proporciona su propio sistema de gestión de estado local ([**useState**](/docs/reactjs/hooks/useState.md) [**useReducer**](/docs/reactjs/hooks/useReducer.md)), pero cuando la aplicación crece en complejidad y varias partes de la interfaz de usuario necesitan acceder al mismo estado, **Redux** puede ser una solución eficaz.
+**React** proporciona su propio sistema de gestión de estado local ([**useState**](/docs/programacion/reactjs/hooks/useState.md) [**useReducer**](/docs/programacion/reactjs/hooks/useReducer.md)), pero cuando la aplicación crece en complejidad y varias partes de la interfaz de usuario necesitan acceder al mismo estado, **Redux** puede ser una solución eficaz.
 :::

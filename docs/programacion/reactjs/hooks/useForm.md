@@ -21,7 +21,7 @@ last_update:
 
 # 7. useForm
 
-En el tutorial [Eventos](/docs/reactjs/proyecto/eventos.md) se explicó el evento **onChange** que debe ser incrustado por cada elemento **HTML** que requiera actualizar el valor del campo con un valor de la variable de estado. 
+En el tutorial [Eventos](/docs/programacion/reactjs/proyecto/eventos.md) se explicó el evento **onChange** que debe ser incrustado por cada elemento **HTML** que requiera actualizar el valor del campo con un valor de la variable de estado. 
 
 :::tip
 Un campo de un formulario cuyos valores son controlados por React es denominado “

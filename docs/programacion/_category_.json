@@ -1,0 +1,9 @@
+{
+  "label": "Programación",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "slug": "/programacion",
+    "keywords": ["React JS","ReactJS","React"]
+  }
+}

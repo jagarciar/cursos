@@ -22,7 +22,7 @@ last_update:
 El **hook** **useRef** es una función especial en **React** que permite a los desarrolladores acceder y **interactuar** con elementos del **DOM** de manera directa. A diferencia de otros enfoques en **React**, donde la **manipulación** del **DOM** se maneja principalmente a través del **estado** y las **props**, **useRef** proporciona una forma de referenciar elementos de manera más imperativa.
 
 :::tip
-A diferencia de otros hooks como [useState](/docs/reactjs/hooks/useState.md) o [useEffect](/docs/reactjs/hooks/useEffect.md), **useRef** no provoca una actualización del componente cuando cambia. Por lo tanto, **useRef** es ideal para casos en los que necesitamos mantener una referencia constante a un elemento o valor sin causar efectos secundarios en el renderizado del componente.
+A diferencia de otros hooks como [useState](/docs/programacion/reactjs/hooks/useState.md) o [useEffect](/docs/programacion/reactjs/hooks/useEffect.md), **useRef** no provoca una actualización del componente cuando cambia. Por lo tanto, **useRef** es ideal para casos en los que necesitamos mantener una referencia constante a un elemento o valor sin causar efectos secundarios en el renderizado del componente.
 :::
 
 Supongamos el siguiente ejemplo:

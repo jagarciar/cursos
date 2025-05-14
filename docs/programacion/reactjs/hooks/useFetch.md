@@ -56,7 +56,7 @@ export const useFetch = (url) => {
 ```
 
 :::danger
-No debes llamar a **Hooks** como [useState](/docs/reactjs/hooks/useState.md) o [useEffect](/docs/reactjs/hooks/useEffect.md) condicionalmente o dentro de ciclos o funciones anidadas. Siempre deben ser utilizados en el nivel superior de tu componente o **Hook personalizado**. Esto asegura que los Hooks se ejecuten en el mismo orden cada vez que tu componente se renderiza, lo cual es crucial para el correcto funcionamiento de React.
+No debes llamar a **Hooks** como [useState](/docs/programacion/reactjs/hooks/useState.md) o [useEffect](/docs/programacion/reactjs/hooks/useEffect.md) condicionalmente o dentro de ciclos o funciones anidadas. Siempre deben ser utilizados en el nivel superior de tu componente o **Hook personalizado**. Esto asegura que los Hooks se ejecuten en el mismo orden cada vez que tu componente se renderiza, lo cual es crucial para el correcto funcionamiento de React.
 :::
 
 Finalmente solo necesitamos reutilizar el **hook** **useFetch** en algún componente que lo requiera:
