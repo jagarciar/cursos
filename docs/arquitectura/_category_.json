@@ -1,0 +1,9 @@
+{
+  "label": "Arquitectura",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "slug": "/arquitectura",
+    "keywords": ["Flux"]
+  }
+}

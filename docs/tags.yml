@@ -43,6 +43,11 @@ export:
   permalink: '/about-export'
   description: 'Tutoriales donde se menciona la palabra export'
 
+flux:
+  label: 'flux'
+  permalink: '/about-flux'
+  description: 'Tutoriales donde se menciona la palabra flux'
+
 hooks:
   label: 'hooks'
   permalink: '/about-hooks'
@@ -67,6 +72,11 @@ npm:
   label: 'NPM'
   permalink: '/about-npm'
   description: 'Tutoriales donde se menciona la palabra npm'
+
+patron-software:
+  label: 'Patrones de software'
+  permalink: '/about-patron-software'
+  description: 'Tutoriales donde se menciona la palabra patrones de desarrollo o diseño de software'
 
 props:
   label: 'props'
