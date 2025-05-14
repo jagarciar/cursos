@@ -34,20 +34,49 @@ En Resumen, el patrón **flux** sigue el siguiente recorrido:
 
 La **vista** serían los **componentes web**, ya sean construidos nativamente, con Polymer, con Angular, React, etc...
 
-## Store
+## Almacén
 
-La **Store** sería lo más parecido al **modelo de la aplicación**. Guarda los datos/estado de la aplicación y en Flux puede existir más de una.
+Un **almacén** sería lo más parecido al **modelo de la aplicación** dado que guarda los datos/estado de la aplicación.
 
-No hay métodos en la Store que permitan modificar los datos en ella, eso se hace a través de **dispatchers** y **acciones**.
+El **almacén** va a tener cuatro responsabilidades:
+
+1. Almacenar el estado global de la aplicación
+2. Dar acceso al estado mediante **store.getState()**
+3. Permitir que el estado se actualice mediante **store.dispatch()**
+4. Registrar listeners mediante **store.subscribe(listener)**
 
 ## Acción
 
-Un **acción** es simplemente un **objeto JavaScript** que indica una **intención** de realizar algo y que lleva datos asociados si es necesario.
+Las **Acciones** son POJOs (**Plain Old JavaScript Objects**) con al menos una propiedad que indica el **tipo de acción** y, de ser necesario, otras propiedades indicando cualquier otro dato necesario para efectuar nuestra acción. Normalmente se usa el formato definido en el **Flux Standard Action (FSA)**.
+
+```javascript
+{
+    type: 'ADD_TASK',
+    payload: {
+        id : 1
+    },
+}
+```
+
+Para enviar una acción a nuestro **Store** usamos la función **store.dispatch()** pasando nuestra **acción** como **único parámetro**.
+
+### Creadores de acciones
+
+Estos son simplemente **funciones** que pueden o no recibir parámetros y devuelven una **acción** (un **POJO**), es muy buena idea, para evitar problemas de consistencia, *programar una función por cada tipo de acción* y usarlas en vez de armar nuestros objetos a mano.
+
+```javascript
+function addTask(id) {
+    return {
+        type: 'ADD_TASK',
+        payload: {
+            id,
+        },
+    };
+}
+```
+
+Debido a que normalmente son funciones puras son fáciles de testear. Luego de ejecutar nuestra función, para poder despachar la acción, es simplemente llamar a la función **dispatch(addTask(1))**.
 
 ## Dispatcher
 
-Las acciones son enviadas a un dispatcher que se encarga de dispararla o propagarla hasta la Store.
-
-La vista es la que se encarga de enviar las acciones al dispatcher.
-
-Un dispatcher no es más que un mediador entre la Store o Stores y las acciones. Sirve para desacoplar la Store de la vista, ya que así no es necesario conocer que Store maneja una acción concreta.
+Las acciones son enviadas a un dispatcher que se encarga de dispararla o propagarla hasta la Store. La vista es la que se encarga de enviar las acciones al dispatcher.Un dispatcher no es más que un mediador entre la Store o Stores y las acciones. Sirve para desacoplar la Store de la vista, ya que así no es necesario conocer que Store maneja una acción concreta.
