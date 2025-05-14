@@ -1,5 +1,6 @@
 {
   "label": "Arquitectura",
+  "description":"Conceptos y/o definiciones de arquitectura de software",
   "position": 1,
   "link": {
     "type": "generated-index",
