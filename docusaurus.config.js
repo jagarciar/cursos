@@ -11,6 +11,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'JEO',
+  staticDirectories: ['public', 'static'],
   tagline: 'Jeyson Andrés García Rodríguez',
   favicon: 'img/favicon.ico',
 

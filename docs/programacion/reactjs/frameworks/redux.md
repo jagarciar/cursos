@@ -24,7 +24,7 @@ last_update:
 **Redux** es un contenedor de estado para aplicaciones JavaScript especialmente útil en el contexto de aplicaciones de **React**. Fue diseñado para gestionar el **estado** de la aplicación de una manera predecible y centralizada. 
 
 :::tip
-**Redux** es un **patrón de arquitectura de datos** que permite manejar el **estado de la aplicación** de una manera predecible. Está pensado para reducir el número de relaciones entre componentes de la aplicación y mantener un flujo de datos sencillo.
+**Redux** es la implementación del **patrón de arquitectura de datos** [**flux**](/docs/arquitectura/flux.md) que permite manejar el **estado de la aplicación** de una manera predecible. Está pensado para reducir el número de relaciones entre componentes de la aplicación y mantener un flujo de datos sencillo.
 :::
 
 **Redux** esta basado en:
@@ -35,4 +35,12 @@ last_update:
 
 :::tip
 **React** proporciona su propio sistema de gestión de estado local ([**useState**](/docs/programacion/reactjs/hooks/useState.md) [**useReducer**](/docs/programacion/reactjs/hooks/useReducer.md)), pero cuando la aplicación crece en complejidad y varias partes de la interfaz de usuario necesitan acceder al mismo estado, **Redux** puede ser una solución eficaz.
+
+La instalación de **Redux** se da a través del comando
+
+```javascript
+npm install redux
+npm install react-redux
+```
 :::
+

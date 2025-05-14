@@ -20,7 +20,7 @@ last_update:
 **Flux** propone una arquitectura en la que el flujo de datos es unidireccional. Los **datos** viajan desde la **vista** por medio de **acciones** y llegan a un **Store** desde el cual se actualizará la vista de nuevo.
 :::
 
-![Arquitectura Flux](/docs/arquitectura/assets/flux.png)
+![Arquitectura Flux](/img/flux.png)
 
 En Resumen, el patrón **flux** sigue el siguiente recorrido:
 
