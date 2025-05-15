@@ -61,3 +61,38 @@ El primer cambio que debemos implementar en nuestro aplicativo **ReactJS** es la
 ```
 
 A continuación solo queda revisar en la [**URL**](https://react-bootstrap.github.io/docs/components/accordion) de la página de **React Bootstrap** los componentes que podemos incluir en nuestro aplicativo. 
+
+Supongamos el siguiente ejemplo : Vamos a crear un componente funcional nombrado **Usuario** el cuál recibirá como **props** (**tipoIdentificacion**, **numIdentificacion**, **nombre**). El componente funcional **Usuario** deberá retornar un componente de tipo [**Cards**](https://react-bootstrap.github.io/docs/components/cards) de **Bootstrap**. 
+
+```javascript title="/src/Usuario.jsx"
+import React from 'react'
+import Card from 'react-bootstrap/Card';
+
+export const Usuario = (props) => {
+  return (
+    <Card style={{ width: '18rem' }}>
+      <Card.Body>
+        <Card.Title>{props.tipoIdentificacion} {props.numIdentificacion}</Card.Title>
+        <Card.Text>
+          {props.nombre}
+        </Card.Text>
+      </Card.Body>
+    </Card>
+  )
+}
+```
+
+Vamos a llamar desde la raíz al componente funcional **Usuario** enviando los valores de las propiedades **tipoIdentificacion**, **numIdentificacion** y **nombre**. 
+
+```javascript title="/src/main.jsx"
+import { StrictMode } from 'react'
+import { createRoot } from 'react-dom/client'
+import './index.css'
+import { Usuario } from './Usuario.jsx'
+
+createRoot(document.getElementById('root')).render(
+  <StrictMode>
+    <Usuario tipoIdentificacion="CC" numIdentificacion="1" nombre="Pepe"/>
+  </StrictMode>
+)
+```
