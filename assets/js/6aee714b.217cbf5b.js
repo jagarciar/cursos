@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcursos=self.webpackChunkcursos||[]).push([[2228],{4651:e=>{e.exports=JSON.parse('{"categoryGeneratedIndex":{"title":"Arquitectura","keywords":["Flux"],"slug":"/arquitectura","permalink":"/cursos/docs/arquitectura","sidebar":"tutorialSidebar","navigation":{"next":{"title":"Patrones","permalink":"/cursos/docs/patrones"}}}}')}}]);
