@@ -1,0 +1,194 @@
+api-rest:
+  label: 'API REST'
+  permalink: '/about-api-rest'
+  description: 'Tutoriales donde se menciona la palabra API REST'
+
+bootstrap:
+  label: 'Bootstrap'
+  permalink: '/about-bootstrap'
+  description: 'Tutoriales donde se menciona la palabra Bootstrap'
+
+cache:
+  label: 'Almacenamiento local o en caché'
+  permalink: '/about-cache'
+  description: 'Tutoriales donde se menciona la palabra caché'
+
+ciclo-vida:
+  label: 'Ciclo de vida'
+  permalink: '/about-ciclo-vida'
+  description: 'Tutoriales donde se menciona la palabra ciclo de vida'
+
+componente-clase:
+  label: 'Componente de clase'
+  permalink: '/about-class-component'
+  description: 'Tutoriales donde se menciona la palabra componente de clase'
+
+componente-funcional:
+  label: 'Componente funcional'
+  permalink: '/about-functional-component'
+  description: 'Tutoriales donde se menciona la palabra componente funcional'
+
+createRoot:
+  label: 'createRoot'
+  permalink: '/about-createRoot'
+  description: 'Tutoriales donde se menciona la palabra createRoot'
+
+css:
+  label: 'CSS'
+  permalink: '/about-css'
+  description: 'Tutoriales donde se menciona la palabra css'
+
+desmontaje:
+  label: 'Desmontaje'
+  permalink: '/about-desmontaje'
+  description: 'Tutoriales donde se menciona la palabra desmontaje'
+
+estado:
+  label: 'Estado'
+  permalink: '/about-estado'
+  description: 'Tutoriales donde se menciona la palabra estado'
+
+export:
+  label: 'export'
+  permalink: '/about-export'
+  description: 'Tutoriales donde se menciona la palabra export'
+
+flux:
+  label: 'flux'
+  permalink: '/about-flux'
+  description: 'Tutoriales donde se menciona la palabra flux'
+
+hooks:
+  label: 'hooks'
+  permalink: '/about-hooks'
+  description: 'Tutoriales donde se menciona la palabra hooks'
+
+jsx:
+  label: 'JSX'
+  permalink: '/about-jsx'
+  description: 'Tutoriales donde se menciona la palabra JSX'
+
+memorizacion:
+  label: 'Memorización'
+  permalink: '/about-memorizacion'
+  description: 'Tutoriales donde se menciona la palabra memorización'
+
+montaje:
+  label: 'Montaje'
+  permalink: '/about-montaje'
+  description: 'Tutoriales donde se menciona la palabra montaje'
+
+npm:
+  label: 'NPM'
+  permalink: '/about-npm'
+  description: 'Tutoriales donde se menciona la palabra npm'
+
+patron-software:
+  label: 'Patrones de software'
+  permalink: '/about-patron-software'
+  description: 'Tutoriales donde se menciona la palabra patrones de desarrollo o diseño de software'
+
+props:
+  label: 'props'
+  permalink: '/about-props'
+  description: 'Tutoriales donde se menciona la palabra props'
+
+react:
+  label: 'React'
+  permalink: '/about-react'
+  description: 'Tutoriales donde se menciona la palabra react'
+
+react-router-dom:
+  label: 'React Router DOM'
+  permalink: '/about-react-router-dom'
+  description: 'Tutoriales donde se menciona la palabra react-router-dom'
+
+reactjs:
+  label: 'React JS'
+  permalink: '/about-react-js'
+  description: 'Tutoriales donde se menciona la palabra reactjs'
+
+reducer:
+  label: 'Reducer'
+  permalink: '/about-reducer'
+  description: 'Tutoriales donde se menciona la palabra reducer'
+
+redux:
+  label: 'Redux'
+  permalink: '/about-redux'
+  description: 'Tutoriales donde se menciona la palabra redux'
+
+renderizado:
+  label: 'Renderizado'
+  permalink: '/about-renderizado'
+  description: 'Tutoriales donde se menciona la palabra renderizado'
+
+useCallback:
+  label: 'useCallback'
+  permalink: '/about-useCallback'
+  description: 'Tutoriales donde se menciona la palabra useCallback'
+
+useContext:
+  label: 'useContext'
+  permalink: '/about-useContext'
+  description: 'Tutoriales donde se menciona la palabra useContext'
+
+useCounter:
+  label: 'useCounter'
+  permalink: '/about-useCounter'
+  description: 'Tutoriales donde se menciona la palabra useCounter'
+
+useDispatch:
+  label: 'useDispatch'
+  permalink: '/about-useDispatch'
+  description: 'Tutoriales donde se menciona la palabra useDispatch'
+
+useEffect:
+  label: 'useEffect'
+  permalink: '/about-useEffect'
+  description: 'Tutoriales donde se menciona la palabra useEffect'
+
+useFetch:
+  label: 'useFetch'
+  permalink: '/about-useFetch'
+  description: 'Tutoriales donde se menciona la palabra useFetch'
+
+useForm:
+  label: 'useForm'
+  permalink: '/about-useForm'
+  description: 'Tutoriales donde se menciona la palabra useForm'
+
+useMemo:
+  label: 'useMemo'
+  permalink: '/about-useMemo'
+  description: 'Tutoriales donde se menciona la palabra useMemo'
+
+useLocalStorage:
+  label: 'useLocalStorage'
+  permalink: '/about-useLocalStorage'
+  description: 'Tutoriales donde se menciona la palabra useLocalStorage'
+
+useReducer:
+  label: 'useReducer'
+  permalink: '/about-useReducer'
+  description: 'Tutoriales donde se menciona la palabra useReducer'
+
+useRef:
+  label: 'useRef'
+  permalink: '/about-useRef'
+  description: 'Tutoriales donde se menciona la palabra useRef'
+
+useSelector:
+  label: 'useSelector'
+  permalink: '/about-useSelector'
+  description: 'Tutoriales donde se menciona la palabra useSelector'
+
+useState:
+  label: 'useState'
+  permalink: '/about-useState'
+  description: 'Tutoriales donde se menciona la palabra useState'
+
+vite:
+  label: 'Vite'
+  permalink: '/about-vite'
+  description: 'Tutoriales donde se menciona la palabra vite'
