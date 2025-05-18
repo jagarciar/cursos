@@ -67,7 +67,7 @@ export const CallBack = () => {
 :::danger
 Durante la realización de este tutorial tuvimos un inconveniente que arrojaba la siguiente excepción :
 
-Too many re-renders. React limits the number of renders to prevent an infinite loop.
+**Too many re-renders. React limits the number of renders to prevent an infinite loop.**
 
 Para este caso, nos sucedia porque al definir el botón, asignamos la función **incrementarContador** para la invocación del evento **onClick**. 
 

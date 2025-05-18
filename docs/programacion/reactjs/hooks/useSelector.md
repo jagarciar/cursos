@@ -19,7 +19,7 @@ last_update:
 
 # useSelector
 
-En el contexto de **Redux**, **useSelector** es una herramienta crucial que permite a los componentes de React acceder al **estado global** almacenado en el **store** de **Redux**. El hook **useSelector** es una función que recibe el **estado** y *devuelve un valor derivado* del **estado**. Esto facilita la obtención de datos específicos de la aplicación y su renderización en el componente.
+En el contexto de [**Redux**](/docs/programacion/reactjs/frameworks/redux.md), **useSelector** es una herramienta crucial que permite a los componentes de React acceder al **estado global** almacenado en el **store** de **Redux**. El hook **useSelector** es una función que recibe el **estado** y *devuelve un valor derivado* del **estado**. Esto facilita la obtención de datos específicos de la aplicación y su renderización en el componente.
 
 :::tip
 El **hook** **useSelector** se utiliza en **componentes funcionales** de **React** para seleccionar y acceder a partes específicas del **estado global** almacenado en el **almacén** de [**Redux**](/docs/programacion/reactjs/frameworks/redux.md). En lugar de acceder directamente al estado global utilizando **store.getState()**, **useSelector** proporciona una forma más conveniente de suscribirse a los cambios de estado y acceder a los datos que un componente necesita.

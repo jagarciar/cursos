@@ -32,8 +32,6 @@ Para entender el uso del **hook** **useMemo** se implementó la función **getFa
 
 El componente **MemoApp** retorna en un parráfo el número sobre el cuál se debe calcular el factorial, en un segundo parráfo el resultado del cálculo, en una caja de texto el valor de la variable de estado **factorial** la cuál ejecuta la función **handleChange** cuando se dispara el evento **onChange** y un botón para que al disparar el evento **onClick** se ejecute la función **handleClick** la cuál actualiza el valor de la variable de estado **clicks**. 
 
-Es super importante que tengamos presente que el componente **MemoApp** tiene dos variables de estado : **factorial** y **clicks**. El **hook** **useMemo** memoriza el valor del resultado de la función **getFactorial** a partir del valor de la variable de estado **factorial**. Es decir, si la variable de estado **factorial** se actualiza, se vuelve a ejecutar la función **getFactorial**, de lo contrario, no se actualiza. Entonces si ejecutamos la función **handleClick** que actualiza el valor de la variable de estado **clicks** y se mantiene el valor de la variable de estado **factorial**, la función **getFactorial** no es nuevamente ejecutada. 
-
 ```javascript title="/src/MemoApp.jsx"
 import React from 'react'
 import { useState, useMemo, useEffect } from 'react';
@@ -75,5 +73,7 @@ export const MemoApp = () => {
     )
 }
 ```
+
+Es super importante que tengamos presente que el componente **MemoApp** tiene dos variables de estado : **factorial** y **clicks**. El **hook** **useMemo** memoriza el valor del resultado de la función **getFactorial** a partir del valor de la variable de estado **factorial**. Es decir, si la variable de estado **factorial** se actualiza, se vuelve a ejecutar la función **getFactorial**, de lo contrario, no se actualiza. Entonces si ejecutamos la función **handleClick** que actualiza el valor de la variable de estado **clicks** y se mantiene el valor de la variable de estado **factorial**, la función **getFactorial** no es nuevamente ejecutada. 
 
 Si el componente **MemoApp** no memorizara a través del **hook** **useMemo** el valor del resultado del cálculo del factorial, cada que se realice un click sobre el botón, se volvería a ejecutar aún si se mantiene el mismo valor de la variable de estado **factorial**. 

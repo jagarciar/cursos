@@ -24,3 +24,5 @@ El **hook** **useDispatch** en **Redux** simplifica el flujo de acciones al perm
 :::tip
 El **hook** **useDispatch** es similar a **mapDispatch** de **connect**. 
 :::
+
+Si quieres ver un ejemplo completo del uso de [**useSelector**](/docs/programacion/reactjs/hooks/useSelector.md) y [**useDispatch**](/docs/programacion/reactjs/hooks/useDispatch.md) dirigite en estos momentos al tutorial [**Redux**](/docs/programacion/reactjs/frameworks/redux.md).

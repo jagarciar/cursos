@@ -141,7 +141,7 @@ Este proceso es recursivo: si el componente actualizado devuelve algún otro com
 
 ### Actualización
 
-En +**React**, la **actualización** es el proceso por medio del cual un componte ya montado es **actualizado**, ya sea por cambiar el **estado** o las **props**.
+En **React**, la **actualización** es el proceso por medio del cual un componte ya montado es **actualizado**, ya sea por cambiar el **estado** o las **props**.
 
 :::tip
 Durante la actualización se comparan las **props** y el **estado** actual con los anteriores para determinar si alguna acción específica debe llevarse a cabo. Por ejemplo, se pueden hacer peticiones a una API para obtener nuevos datos si los **props** cambian o actualizar ciertos valores en función del **estado**.
