@@ -19,7 +19,7 @@ const config = {
   url: 'https://jagarciar.github.io/',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/cursos/',
+  baseUrl: '/',
   trailingSlash:false,
   deploymentBranch:'gh-pages',
   // GitHub pages deployment config.
@@ -53,7 +53,13 @@ const config = {
           // Remove this to remove the "edit this page" links.
           editUrl: `https://github.com/jagarciar/cursos/tree/main/`,
         },
-        blog: false,
+        blog: {
+          blogTitle: 'Blog',
+          blogDescription: 'Un blog existe cuando la teoria, los conceptos y los lineamientos tienen variantes o se deben extender.',
+          postsPerPage: 'ALL',
+          blogSidebarTitle: 'All posts',
+          blogSidebarCount: 'ALL'
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -78,7 +84,8 @@ const config = {
             sidebarId: 'tutorialSidebar',
             position: 'left',
             label: 'Tutorial',
-          }
+          },
+          {to: 'blog', label: 'Blog', position: 'left'}
         ],
       },
       prism: {

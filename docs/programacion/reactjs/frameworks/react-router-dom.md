@@ -40,7 +40,11 @@ npm install react-router-dom
 
 Supongamos el siguiente ejemplo:
 
-Definidos un barra de navegación a través del siguiente componente funcional **NavBar**. **NavBar** retorna a través de **NavLink** el menú de navegación de nuestra aplicación. **NavLink** es un elemento de **React Router** que tiene un atributo **to** sobre el cuál debe ser mencionada la ruta. 
+Definimos un barra de navegación a través del siguiente componente funcional **NavBar**. **NavBar** retorna junto a **NavLink** el menú de navegación de nuestra aplicación. **NavLink** es un elemento de **React Router** que tiene un atributo **to** sobre el cuál debe ser mencionada la ruta. 
+
+:::tip
+Usa **NavLink** para los elementos HTML mientras que **Routes** para la lógica del enrutamiento. **NavLink** debe estar relacionado directamente con las rutas definidas en **Routes**. 
+:::
 
 **NavBar** define también las rutas a través de **Routes**. **Routes** debe incluir uno o varios **Route** donde a través del atributo **path** definimos la ruta sobre la cuál se desplegará el componente definido en el atributo **element**. Es decir, si el usuario oprime click sobre el **NavLink** **About** será enrutado al componente **AboutScreen**. 
 

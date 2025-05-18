@@ -18,7 +18,7 @@ last_update:
 
 # CSS
 
-Durante la creación de un proyecto en **React** por defecto haciendo uso de **Vite** se crean diferentes archivos y carpetas que fueron explicados en el tutorial [Estructura de un proyecto](/docs/programacion/reactjs/proyecto/estructura-proyecto.md). Dentro de los archivos por defecto que son creados se encuentran algunos con extensión **.css**. Este tipo de archivos contienen la definición de **estilos** de nuestros componentes. 
+Durante la creación de un proyecto en **React** por defecto haciendo uso de **Vite** se crean diferentes archivos y carpetas que fueron explicados en el tutorial [**¿De qué está compuesto nuestro proyecto ReactJS?**](/docs/programacion/reactjs/proyecto/estructura-proyecto.md). Dentro de los archivos por defecto que son creados se encuentran algunos con extensión **.css**. Este tipo de archivos contienen la definición de **estilos** de nuestros componentes. 
 
 El archivo **/src/index.css** creado por defecto contiene la definición de los estilos para toda la aplicación y/o proyecto. Sin embargo, **React** permite que también existan definiciones de estilos por cada componente y nos lo demuestra con el archivo **/src/App.css**. 
 
@@ -114,4 +114,9 @@ export const PorfolioApp = () => {
 
 :::tip
 Se aconseja que las definiciones de estilos sea en un archivo **css** para que la lectura del código fuente no sea compleja
+:::
+
+
+:::tip
+Existen librerías o frameworks como [**Bootstrap**](/docs/programacion/reactjs/frameworks/bootstrap.md) que permiten heredar algunos estilos gráficos predefinidos.
 :::

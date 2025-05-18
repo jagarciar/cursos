@@ -34,14 +34,14 @@ last_update:
 
 1. El estado de toda tu aplicación esta almacenado en un árbol guardado en un único store.
 2. La única forma de modificar el estado es emitiendo una acción, un objeto describiendo que ocurrió. 
-3. Para especificar como el árbol de estado es transformado por las acciones, se utilizan **reducers** puros.
+3. Para especificar como el **árbol de estado** es transformado por las **acciones**, se utilizan **reducers** puros.
 
 Tengamos en cuenta que :
 
 - A diferencia de [**Flux**](/docs/arquitectura/patrones/flux.md), en **Redux** no existe el concepto de **Dispatcher**. Esto es porque se basa en funciones puras en vez de emisores de ventos, y las funciones puras son fáciles de componer y no necesitan entidades adicionales para controlarlas
 
 :::tip
-**React** proporciona su propio sistema de gestión de estado local ([**useState**](/docs/programacion/reactjs/hooks/useState.md) [**useReducer**](/docs/programacion/reactjs/hooks/useReducer.md)), pero cuando la aplicación crece en complejidad y varias partes de la interfaz de usuario necesitan acceder al mismo estado, **Redux** puede ser una solución eficaz.
+**React** proporciona su propio sistema de gestión de estado local : ([**useState**](/docs/programacion/reactjs/hooks/useState.md) y [**useReducer**](/docs/programacion/reactjs/hooks/useReducer.md)), pero cuando la aplicación crece en complejidad y varias partes de la interfaz de usuario necesitan acceder al mismo estado, **Redux** puede ser una solución eficaz.
 
 La instalación de **Redux** se da a través del comando
 
