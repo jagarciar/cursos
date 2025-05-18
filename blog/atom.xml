@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://jagarciar.github.io/blog</id>
+    <title>JEO Blog</title>
+    <updated>2025-05-18T00:00:00.000Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://jagarciar.github.io/blog"/>
+    <subtitle>JEO Blog</subtitle>
+    <icon>https://jagarciar.github.io/img/favicon.ico</icon>
+    <entry>
+        <title type="html"><![CDATA[Composicion-reducers]]></title>
+        <id>https://jagarciar.github.io/blog/2025/05/18/Composicion-reducers</id>
+        <link href="https://jagarciar.github.io/blog/2025/05/18/Composicion-reducers"/>
+        <updated>2025-05-18T00:00:00.000Z</updated>
+    </entry>
+</feed>
