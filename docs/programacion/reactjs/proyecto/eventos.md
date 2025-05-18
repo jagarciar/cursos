@@ -28,7 +28,7 @@ Los controladores de eventos también atraparán eventos de cualquier componente
 
 En el siguiente ejemplo creamos un componente funcional llamado **Event**. Este componente contiene un botón el cuál captura un evento de tipo **onClick**. El evento invoca la función **handleClick** que esta implementada previo al retorno. 
 
-En el siguiente ejemplo tenemos un botón que llama a la función **handleClick**. Esta función **handleClick** recibe el parámetro **event** y debe ser desclarado antes del return el componente funcional. 
+En el siguiente ejemplo tenemos un botón que llama a la función **handleClick**. Esta función **handleClick** recibe el parámetro **event** y debe ser desclarado antes del retorno del componente funcional. 
 
 ```javascript
 import React from 'react'
@@ -49,7 +49,7 @@ export const EventApp = () => {
 
 En el siguiente ejemplo creamos un componente funcional llamado **Event**. Este componente contiene una caja de texto. El valor de la caja de texto puede variar. El evento invoca la función **handleChange** que esta implementada previo a cada que se adiciiona eliminan o elementos sobre el valor de la caja de texto. 
 
-***tip
+:::tip
 ¿Quieres entender un poco más este ejemplo? :) Primero debe ir a leer el tutorial [useState](/docs/programacion/reactjs/hooks/useState.md).
 :::
 

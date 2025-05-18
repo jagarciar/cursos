@@ -70,8 +70,8 @@ Si queremos definir unos **parámetros obligatorios** o queremos **restringir el
 
 Para poder importar a **prop-types** debemos instalar el paquete mediante el siguiente comando:
 
-```
-npm install --save prop-types
+```javascript
+npm install prop-types
 ```
 
 Es decir que a través de :
@@ -125,25 +125,7 @@ Carro.propTypes = {
 }
 ```
 
-## Importación
-
-Vamos a mantener la misma definición o el tutorial realizado sobre **props**, Vamos a mantener el componente **Carro** que tiene dos parámetros **nombre** y **cantidadDeLlamadas**. 
-
-```javascript title="/src/CarroApp.jsx"
-import React from 'react'
-import PropTypes from 'prop-types'
-
-export const Carro = ({nombre, cantidadLlantas}) => {
-  return (
-    <div>{nombre}</div>
-  )
-}
-
-Carro.propTypes = {
-    nombre: PropTypes.string.isRequired,
-    cantidadLlantas: PropTypes.number
-}
-```
+### Importación y uso de componentes
 
 En el archivo **main.jsx** se referencia al **componente padre**. El **componente padre** recibe dos parámetros : **nombre**, de tipo string y es requerido. **cantidadLlantas**, te tipo number y es opcional. 
 
@@ -177,19 +159,7 @@ createRoot(document.getElementById('root')).render(
 
 ## Valores por defecto
 
-Supongamos que queremos darle valores por defecto a los atributos : **nombre**, **catidadLlantas** del componente **Carro**. 
-
-```javascript title="/src/CarroApp.jsx"
-import React from 'react'
-
-export const Carro = ({nombre , cantidadLlantas}) => {
-  return (
-    <div>{nombre}</div>
-  )
-}
-```
-
-Al importar el componente **Carro** en el archivo **main.jsx**. En este ejemplo ya no se enviará el valor del atributo **nombre**. Esto dado que asumirá el valor por defecto. 
+Supongamos que queremos darle valores por defecto al atributo : **nombre**. El atributo  **catidadLlantas** mantendra su definición. Tanto el atributo **nombre** como el atributo **cantidadLlantas** estan descritos dentro del componente **Carro**. 
 
 ```javascript title="/src/CarroApp.jsx"
 import React from 'react'
@@ -201,7 +171,7 @@ export const Carro = ({nombre = "Hyundai", cantidadLlantas}) => {
 }
 ```
 
-Finalmente en la importación ya no será necesaria su definición:
+Finalmente, en el archivo **main.jsx** ya no será necesario enviar el valor del atributo **nombre**, dado que al no ser enviado asumirá el valor por defecto. 
 
 ```javascript title="/src/main.jsx"
 import { StrictMode } from 'react'

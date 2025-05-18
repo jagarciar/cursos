@@ -17,7 +17,7 @@ last_update:
 
 # ¿De qué está compuesto nuestro proyecto ReactJS?
 
-Fue creado previamente un proyecto y/o un aplicativo **ReactJS** haciendo uso de **Vite** como se explicó en el tutorial [2. Creación de un proyecto](/docs/programacion/reactjs/proyecto/crear-proyecto.md).
+Fue creado previamente un proyecto y/o un aplicativo **ReactJS** haciendo uso de **Vite** como se explicó en el tutorial [¿Cómo crear un proyecto ReactJS?](/docs/programacion/reactjs/proyecto/crear-proyecto.md).
 
 El resultado obtenido es un conjunto de archivos y carpetas con la siguiente estructura:
 

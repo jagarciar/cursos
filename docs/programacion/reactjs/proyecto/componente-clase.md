@@ -50,5 +50,9 @@ export class Componente extends React.Component {
 ```
 
 :::warning
-En la mayoría de sitios web recomiendan hacer uso de **componentes funcionales** por encima de los **componentes de clase**
+En la mayoría de sitios web recomiendan hacer uso de **componentes funcionales** por encima de los **componentes de clase** dado que : 
+
+- El concepto de clases está en desuso en JavaScript. 
+- Al implementar un componente de clase, el desarrollador debe previamente entender el concepto de clase (y en algunos casos de programación orientada a objetos).  
+- Es menos tedioso hacer pruebas sobre componentes funcionales que sobre componentes de clase. 
 :::
