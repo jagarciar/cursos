@@ -76,7 +76,7 @@ export const ComponenteApp = () => {
 :::tip
 El nombre de **useReducer** da pie a confundirlo con [**Redux**](/docs/programacion/reactjs/frameworks/redux.md), pero en realidad son cosas completamente diferentes.
 
-**useReducer** es un **hook** de **React** para **actualizar** un **estado** interno por medio de una función llamada **reducer**. [**Redux**](/docs/programacion/reactjs/frameworks/redux.md) es una **arquitectura** que nos permite **abstraer** el manejo de un **estado** global en una aplicación y es una implementación del patrón de arquitectura [**Flux**](/docs/arquitectura/patrones/flux.md).
+**useReducer** es un **hook** de **React** para **actualizar** un **estado** interno por medio de una función llamada **reducer**. [**Redux**](/docs/programacion/reactjs/frameworks/redux.md) es una **arquitectura** que nos permite **abstraer** el manejo de un **estado** global en una aplicación y es una implementación del patrón de arquitectura [**Flux**](/blog/2025-05-18-Flux.md).
 :::
 
 Supongamos el siguiente ejemplo:

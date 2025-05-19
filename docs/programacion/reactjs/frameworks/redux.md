@@ -27,8 +27,10 @@ last_update:
 **Redux** es un contenedor de estado para aplicaciones JavaScript especialmente útil en el contexto de aplicaciones de **React**. Fue diseñado para gestionar el **estado** de la aplicación de una manera predecible y centralizada. 
 
 :::tip
-**Redux** es la implementación del **patrón de arquitectura de datos** [**flux**](/docs/arquitectura/patrones/flux.md) que permite manejar el **estado de la aplicación** de una manera predecible. Está pensado para reducir el número de relaciones entre componentes de la aplicación y mantener un flujo de datos sencillo.
+**Redux** es la implementación del **patrón de arquitectura de datos** [**flux**](/blog/2025-05-18-Flux.md) que permite manejar el **estado de la aplicación** de una manera predecible. Está pensado para reducir el número de relaciones entre componentes de la aplicación y mantener un flujo de datos sencillo.
 :::
+
+![Redux](/img/Redux.png)
 
 **Redux** esta basado en:
 
@@ -38,7 +40,7 @@ last_update:
 
 Tengamos en cuenta que :
 
-- A diferencia de [**Flux**](/docs/arquitectura/patrones/flux.md), en **Redux** no existe el concepto de **Dispatcher**. Esto es porque se basa en funciones puras en vez de emisores de ventos, y las funciones puras son fáciles de componer y no necesitan entidades adicionales para controlarlas
+- A diferencia de [**Flux**](/blog/2025-05-18-Flux.md), en **Redux** no existe el concepto de **Dispatcher**. Esto es porque se basa en funciones puras en vez de emisores de ventos, y las funciones puras son fáciles de componer y no necesitan entidades adicionales para controlarlas
 
 :::tip
 **React** proporciona su propio sistema de gestión de estado local : ([**useState**](/docs/programacion/reactjs/hooks/useState.md) y [**useReducer**](/docs/programacion/reactjs/hooks/useReducer.md)), pero cuando la aplicación crece en complejidad y varias partes de la interfaz de usuario necesitan acceder al mismo estado, **Redux** puede ser una solución eficaz.
@@ -256,3 +258,7 @@ export const AppEstudiante = () => {
     )
 }
 ```
+
+:::tip**
+Se recomienda la lectura de [**Combinación de reductores**](/blog/2025-05-18-Composicion-reducers.md), la cuál nos explica cómo podemos implementar varios reductores y un único almacén para tener organizado nuestro código fuente
+:::
