@@ -43,13 +43,11 @@ npm install
 
 ## Instalación de frameworks adicionales
 
-El proyecto que fue creado previamente tiene los paquetes y/o dependencias necesarias. Sin embargo, para esta aplicación vamos a incluir el uso de [**Redux**](/docs/programacion/reactjs/frameworks/redux.md) y [**React Bootstrap**](/docs/programacion/reactjs/frameworks/bootstrap.md). 
+El proyecto que fue creado previamente tiene los paquetes y/o dependencias necesarias. Sin embargo, para esta aplicación vamos a incluir el uso de [**React Bootstrap**](/docs/programacion/reactjs/frameworks/bootstrap.md). 
 
 Por tal motivo, debemos ejecutar los siguientes comandos:
 
 ```javascript
-npm install redux
-npm install react-redux
 npm install bootstrap
 npm install react-bootstrap 
 ```
@@ -164,11 +162,31 @@ Teniendo en cuenta la respuesta de cada endpoint y los campos que son necesarios
 
 Con el wireframe podemos definir nuestros componentes: 
 
-- El componente **SelectPokemon** incluirá un combo box. Cada opción del combo box representará el nombre de un pokemon. Los nombres de los pokemones se obtendrán al consumir la API **https://pokeapi.co/api/v2/type/3**. 
-- El componente **Abilities** incluirá una lista sin un orden específico. Cada item de la lista será un componente **Ability**. Esta lista será obtenida después de consumir la API según el pokemon seleccionado en el componente **SelectPokemon**.  
+- El componente **Pokemon** será el encargado de obtener de la API **https://pokeapi.co/api/v2/type/3** todos los nombres de los pokemones. Este arreglo deberá ser enviado como [**Prop**](/docs/programacion/reactjs/proyecto/props.md) al componente **SelectPokemon**. 
+- El componente **SelectPokemon** incluirá un combo box. Cada opción del combo box representará el nombre de un pokemon. Este componente recibirá el arreglo de los pokemones. Cada item del arreglo contendrá un campo **name** y un campo **url**. 
+- El componente **SelectPokemon** incluirá el componente **Abilities** y le enviará como [**Prop**](/docs/programacion/reactjs/proyecto/props.md) la url de la API de consulta del pokemon seleccionado. 
+- El componente **Abilities** incluirá una lista sin un orden específico. Cada item de la lista será un componente **Ability**. Este componente recibirá la URL del endpoint que debe ser consumido para el pokemon seleccionado. Cada item del arreglo contendrá un campo **name**. 
 - El componente **Ability** representará un item de una lista sin un orden especifico y su valor será una habilidad del pokemon seleccionado en el componente **SelectPokemon**. 
 
 ## Desarollo
 
-### Hooks
+:::tip
+Esta aplicación hará uso del **hook** [**useFetch**](/docs/programacion/reactjs/hooks/useFetch.md). Este **hook** recibe la URL de la API que debe ser consumida y retorna tres campos : **data**, **loading** y **error**.
+:::
 
+```javascript title="/src/Pokemon.jsx"
+import React from 'react'
+import { SelectPokemon } from './SelectPokemon'
+import { useFetch } from './useFetch';
+
+export const Pokemon = () => {
+
+    const { data, loading, error } = useFetch('https://pokeapi.co/api/v2/type/3');
+    
+    if (loading) return <p>Loading...</p>;
+    if (error) return <p>Error: {error.message}</p>;
+    return (
+        <SelectPokemon pokemones={data.pokemon} />
+    )
+}
+```
