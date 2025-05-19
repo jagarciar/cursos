@@ -1,5 +1,4 @@
 ---
-id: composicion-reductores
 title: Composición de reductores
 description: Cuando se desea dividir la lógica para el manejo de datos en un aplicativo ReactJS que hace uso de Redux, se debe usar la composición de reductores en lugar de muchos stores.
 slug: composicion-reductores

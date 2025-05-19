@@ -166,4 +166,9 @@ Con el wireframe podemos definir nuestros componentes:
 
 - El componente **SelectPokemon** incluirá un combo box. Cada opción del combo box representará el nombre de un pokemon. Los nombres de los pokemones se obtendrán al consumir la API **https://pokeapi.co/api/v2/type/3**. 
 - El componente **Abilities** incluirá una lista sin un orden específico. Cada item de la lista será un componente **Ability**. Esta lista será obtenida después de consumir la API según el pokemon seleccionado en el componente **SelectPokemon**.  
-- El componente **Ability** representará un item de una lista sin un orden especifico y su valor será una habilidad del pokemon seleccionado en el componente **SelectPokemon**.  
+- El componente **Ability** representará un item de una lista sin un orden especifico y su valor será una habilidad del pokemon seleccionado en el componente **SelectPokemon**. 
+
+## Desarollo
+
+### Hooks
+
