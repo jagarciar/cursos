@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkcursos=self.webpackChunkcursos||[]).push([[2240],{3964:e=>{e.exports=JSON.parse('{"metadata":{"permalink":"/cursos/blog","page":1,"postsPerPage":4,"totalPages":1,"totalCount":4,"blogDescription":"Un blog existe cuando la teoria, los conceptos y los lineamientos tienen variantes o se deben extender.","blogTitle":"Blog"}}')}}]);
