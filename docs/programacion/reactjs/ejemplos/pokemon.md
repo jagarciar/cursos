@@ -78,3 +78,6 @@ Dado que este proyecto hará uso de [**React Bootstrap**](/docs/programacion/rea
 </html>
 ```
 
+:::tip
+Según el [**Principio de responsabilidad única**](/blog/2025-05-19-SRP.md) : *Un componente debería tener una sola razón para cambiar*, es decir, debería tener una sola responsabilidad.
+:::
