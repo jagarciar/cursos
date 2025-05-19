@@ -123,6 +123,16 @@ renderizado:
   permalink: '/about-renderizado'
   description: 'Tutoriales donde se menciona la palabra renderizado'
 
+solid:
+  label: 'SOLID'
+  permalink: '/about-solid'
+  description: 'Tutoriales donde se menciona la palabra SOLID'
+
+srp:
+  label: 'Principio de responsabilidad única'
+  permalink: '/about-srp'
+  description: 'Tutoriales donde se menciona la palabra srp'
+
 useCallback:
   label: 'useCallback'
   permalink: '/about-useCallback'
