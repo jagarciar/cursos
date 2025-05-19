@@ -43,37 +43,13 @@ const initialProductsState = [
 ]
 ```
 
-Después de definir el modelo de datos, debemos definir el reducer o reductor. Tengamos presente que el reducer es una función JavaScript que recibe el estado actual y una acción y retorna un nuevo estado.
-
-Supongamos que nuestro aplicativo tiene las siguientes capacidades,  funciones o **tipos de acciones**. 
-
-1. Registrar cliente
-2. Seleccionar producto
-3. De-seleccionar producto
-4. Modificar cliente
-5. Eliminar cliente
-6. Consultar todos los productos seleccionados
-
-Cada **tipo de acción** definiriá su propio **type** y **payload**. Por ejemplo : el tipo de acción **Registrar cliente** define el **type** como **REGISTER_CUSTOMER** y el **payload** como:
-
-```json
-{
-  id:0,
-  name:"Jeyson",
-  age:33,
-  email:"jeogarod@gmail.com"
-}
-```
-
-Dado que puede existir más de una entidad de negocio, con uno o varios tipos de acción, se recomienda definir e implementar un reducer por cada entidad de negocio.
-
-En el siguiente ejemplo se definieron e implementaron dos reductores : cliente y producto. 
+Cada modelo de datos podría y debería estar asociado a un reductor. Por ejemplo, **clienteReducer** respondería a los tipos de acción asociados al modelo del cliente y **productosReducer** respondería a los tipos de acción asociados al modelo de los productos.  
 
 ```javascript
-export const clienteReducer = (state = { }, action) => {
+export const clienteReducer = (state = initialCustomerState, action) => {
     switch (action.type) {
         case "REGISTER_CUSTOMER":
-            return { state }
+            return action.payload;
 
         default:
             return state
@@ -82,7 +58,7 @@ export const clienteReducer = (state = { }, action) => {
 ```
 
 ```javascript
-export const productosReducer = (state = { productos : []}, action) => {
+export const productosReducer = (state = initialProductsState, action) => {
     switch (action.type) {
         case "ADD_PRODUCTO":
             return [...productos, action.payload]
@@ -103,8 +79,10 @@ const reducer = combineReducers({
 })
 ```
 
-Finalmente durante la creación del almacén se envía como argumento a la función el resultado de la combinación de los reductores. 
+Finalmente durante la creación del **almacén** se envía como argumento a la función el resultado de la combinación de los reductores. 
 
 ```javascript
 const store = createStore(reducer)
 ```
+
+Esto va permitir que tengamos organizado nuestro código con varios reductores y un único almacén. 
