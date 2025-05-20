@@ -60,3 +60,14 @@ Dentro de los **hooks del framework** se encuentran:
 :::warning
 Los **hooks**, aunque increíbles, vienen con sus propios limitantes. Por un lado, sólo puedes mandarlos a llamar en el **cuerpo de la función**, y no pueden llamarse dentro de **condicionales**, **ciclos**, o cualquier otra estructura que agregue un nuevo nivel de ejecución al componente
 :::
+
+:::danger
+Si en tu proyecto o aplicativo vas a implementar o hacer uso de un  **hook** debes tener en cuenta:
+
+❌ No se debe llamar a los Hooks dentro de **condicionales** o **bucles**.
+❌ No se debe llamar a los Hooks después de una declaración **return condicional**.
+❌ No se debe llamar a los Hooks dentro de **event handlers**.
+❌ No se debe llamar a los Hooks dentro de [**Componentes de clase**](/docs/programacion/reactjs/proyecto/componente-clase.md).
+❌ No se debe llamar a los Hooks dentro de funciones pasadas a [**useMemo**](/docs/programacion/reactjs/hooks/useMemo.md), [**useReducer**](/docs/programacion/reactjs/hooks/useReducer.md) o [**useEffect**](/docs/programacion/reactjs/hooks/useEffect.md).
+❌ No se debe llamar a los Hooks dentro de bloques try/catch/finally.
+:::
