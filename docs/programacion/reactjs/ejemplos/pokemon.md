@@ -13,6 +13,11 @@ tags:
   - vite
   - bootstrap
   - redux
+  - useState
+  - useFetch
+  - useEffect
+  - api-rest
+  - api-first
   - hooks
 last_update:
   date: 05/19/2025
@@ -174,6 +179,26 @@ Con el wireframe podemos definir nuestros componentes:
 Esta aplicación hará uso del **hook** [**useFetch**](/docs/programacion/reactjs/hooks/useFetch.md). Este **hook** recibe la URL de la API que debe ser consumida y retorna tres campos : **data**, **loading** y **error**.
 :::
 
+![Diseño](/img/Pokemon-Diseno.svg)
+
+La base de esta aplicación es el consumo inicial de la API que obtiene todos los pokemones. A partir de ello se llena el combo box y dependerá de que el usuario seleccione una de las opciones para que se desencadene el montaje o actualización del componente encargado de consultar las habilidades. De hecho, desde mi punto de vista, la consulta de la API de las habilidades de un pokemon fue la más díficil de implementar (por la dependencia de la acción del usuario). 
+
+Tengamos presente que cada que el usuario seleccione una opción diferente, se refresca el componente padre dado que las variables de estado son actualizadas también. Esto desencadena que el componente hijo deba refrescarse y es el truco para entender el llamado de la segunda API. 
+
+:::tip
+¿Por mejorar? Yo creeria que tal vez podriamos usar el **hook** [**useCallback**](/docs/programacion/reactjs/hooks/useCallback.md) para la consulta de todos los pokemones al igual que para la consulta de todas las habilidades de un pokemon. Sin embargo, dado que ambos componentes no tienen otros elementos que impliquen controlar un renderizado, se puede obviar. 
+:::
+
+:::tip
+¿Por mejorar? Yo creeria que tal vez podriamos usar [**Redux**](/docs/programacion/reactjs/frameworks/redux.md) para almacenar los pokemones y el pokemon seleccionado evitando tener variables de estado con el **hook** [**useState**](/docs/programacion/reactjs/hooks/useState.md). Sin embargo, la situación se complica un poco para el llamado de la segunda API teniendo en cuenta que no es posible llamar un **hook** dentro de una condicional u otro hook. Se espera siempre que se llamen a un alto nivel. 
+:::
+
+### Pokemon
+
+El componente **Pokemon** fue diseñado e implementado en el archivo **/src/Pokemon.jsx**. Este componente hace uso del **hook** [**useFetch**](/docs/programacion/reactjs/hooks/useFetch.md), el cuál recibe la URI de la API que será consumida inicialmente **https://pokeapi.co/api/v2/type/3** y retorna el resultado (en el campo **data**), el estado de finalización del consumo (en el campo **loading**) y el detalle de un **error** (siempre que se capture uno en el **hook**).
+
+El componente **Pokemon** solo renderizará el componente **SelectPokemon** cuando el campo **data** del **hook** **useFetch** retorne algún valor. En ese momento, le enviará como [**Props**](/docs/programacion/reactjs/proyecto/props.md) el arreglo de pokemones obtenido previamente. 
+
 ```javascript title="/src/Pokemon.jsx"
 import React from 'react'
 import { SelectPokemon } from './SelectPokemon'
@@ -190,3 +215,109 @@ export const Pokemon = () => {
     )
 }
 ```
+
+### SelectPokemon 
+
+El componente **SelectPokemon** fue diseñado e implementado sobre el archivo **/src/SelectPokemon.jsx**. Este componente recibe mediante [**Props**](/docs/programacion/reactjs/proyecto/props.md) el arreglo de pokemones y por cada item un objeto llamado **pokemon** el cuál contiene el campo **name** y el campo **url**.
+
+El componente **SelectPokemon** tiene dos variables de estado : **urlEndpointPokemon** y **pokemon** con sus respectivas funciones **set** : **setURL** y **setPokemon**. Recordemos que las variables de estado son creadas a partir del **hook** [**useState**](/docs/programacion/reactjs/hooks/useState.md). 
+
+El componente **SelectPokemon** retorna bajo un [**Container**](https://react-bootstrap.github.io/docs/layout/grid) el combo box ([**DropdownButton**](https://react-bootstrap.github.io/docs/components/dropdowns/)) y el componente **Abilities**. 
+
+El combo box ([**DropdownButton**](https://react-bootstrap.github.io/docs/components/dropdowns/)) responde al evento **onSelect** a través de la ejecución de la función **handleSelect**. Es decir, cada que un usuario seleccione un pokemon, el evento **onSelect** disparará la función **handleSelect**, la cuál buscará el pokemon seleccionado en el arreglo de pokemones que llegaron como [**Props**](/docs/programacion/reactjs/proyecto/props.md). Al ser encontrado, se actualizaran los variables de estado : **urlEndpointPokemon** y **pokemon** mediante las funciones **setURL** y **setPokemon**. Esto generará que el componente se renderice nuevamente y a su vez renderice los componentes hijos (como el componente **Abilities**).
+
+En este caso cuando aún no ha finalizado el consumo la API, el componente **SelectPokemon** retornará un parráfo con la palabra ***Loading...**. Por el contrario, si se generó una excepción durante la integración, el retorno del componente será un parráfo con el mensaje del error capturado. 
+
+```javascript title="/src/SelectPokemon.jsx"
+import React, {  useState } from 'react'
+import DropdownButton from 'react-bootstrap/DropdownButton';
+import Container from 'react-bootstrap/Container';
+import { SelectItemPokemon } from './SelectItemPokemon';
+import { Abilities } from './Abilities';
+
+export const SelectPokemon = ({ pokemones }) => {
+
+    const [urlEndpointPokemon, setURL] = useState('');
+    const [pokemon, setPokemon] = useState('');
+
+    const handleSelect = (event) => {
+        pokemones.map((pokemon) => {
+            if (pokemon.pokemon.name == event) {
+                setPokemon(pokemon.pokemon.name)
+                setURL(pokemon.pokemon.url);
+            }
+        })
+        
+    }
+
+    return (
+        <Container fluid>
+            <DropdownButton id="dropdown-basic-button" title="Seleccione un pokemon" onSelect={handleSelect}>
+                {
+                    pokemones.map(Pokemon => <SelectItemPokemon key={Pokemon.pokemon.name} name={Pokemon.pokemon.name} />)
+                }
+            </DropdownButton>
+            <Abilities pokemon={pokemon} urlEndpoint={urlEndpointPokemon} />
+        </Container>
+    )
+}
+```
+
+### Abilities 
+
+El componente **Abilities** puede ser muy símil al componente **Pokemon** dado que se integran con un sistema externo a través del consumo de una API REST. En este caso **Abilities** recibe dos parámetros como [**Props**](/docs/programacion/reactjs/proyecto/props.md) : **pokemon** y **urlEndpoint**. El parámetro **pokemon** contendrá el nombre del pokemon seleccionado. El parámetro **urlEndpoint** contendrá la URL de la API REST que debe ser consumida según el pokemon seleccionado. 
+
+Dado que el componente **Abilities** debe integrarse con un sistema externo a través del consumo de una API hará uso del **hook** [**useFetch**](/docs/programacion/reactjs/hooks/useFetch.md). Tengamos presente que el **hook** [**useFetch**](/docs/programacion/reactjs/hooks/useFetch.md) retorna la respuesta (en el campo **data**), el estado del consumo de la API (en el campo **loading**) y un campo con el error generado (siempre que se capture una excepción durante el consumo).
+
+El componente **Abilities** retorna bajo un [**Container**](https://react-bootstrap.github.io/docs/layout/grid) un componente nombrado [**ListGroup**](https://react-bootstrap.github.io/docs/components/dropdowns/) y un parráfo con el nombre del pokemón que fue seleccionado. Este componente modela una lista des-organizada.
+
+Cada item del [**ListGroup**](https://react-bootstrap.github.io/docs/components/dropdowns/) será un componente hijo **Ability** el cuál recibe como [**Props**](/docs/programacion/reactjs/proyecto/props.md) el nombre de la habilidad del pokemón. 
+
+En este caso cuando aún no ha finalizado el consumo la API o se generó una excepción durante la integración, el retorno del componente será vacío. 
+
+```javascript title="/src/Abilities.jsx"
+import React from 'react'
+import ListGroup from 'react-bootstrap/ListGroup';
+import Container from 'react-bootstrap/Container';
+import { Ability } from './Ability';
+import { useFetch } from './useFetch';
+
+export const Abilities = ({ pokemon, urlEndpoint }) => {
+
+    const { data, loading, error } = useFetch(urlEndpoint);
+    let abilities = data && data.abilities ? data.abilities : [];
+
+    if (loading) return;
+    if (error) return;
+    return (
+        <Container style={{marginTop:20}}>
+            <p>Las habilidades de {pokemon} son :</p>
+            <ListGroup>
+                {abilities.map(ability => <Ability key={ability.ability.name} name={ability.ability.name} />)}
+            </ListGroup>
+        </Container>
+    )
+}
+```
+
+### Ability
+
+El componente **Ability** recibe como [**Props**](/docs/programacion/reactjs/proyecto/props.md) el nombre de la habilidad del pokemon que fue seleccionado y lo retorna bajo un componente [**ListGroup.Item**](https://react-bootstrap.github.io/docs/components/list-group). 
+
+```javascript title="/src/Ability.jsx"
+import React from 'react'
+import ListGroup from 'react-bootstrap/ListGroup';
+
+export const Ability = ({name}) => {
+
+  return (
+    <ListGroup.Item key={name}>{name}</ListGroup.Item>
+  )
+}
+```
+
+## Resultado
+
+El resultado final de nuestro aplicativo es el siguiente:
+
+![Resultado](/img/Pokemon-Resultado.png)

@@ -71,3 +71,7 @@ Se recomienda hacer uso de los **hooks** [**useSelector**](/docs/programacion/re
 [**React Router DOM**](/docs/programacion/reactjs/frameworks/react-router-dom.md) le va enseñar a nuestro desarrollador a definir el enrutamiento del aplicativo y [**Bootstrap**](/docs/programacion/reactjs/frameworks/bootstrap.md) le va enseñar hacer uso de estilos gráficos predefinidos en una librería. 
 
 ¡Felicitaciones desarrolladores! si llegaron hasta aquí es porque finalizaron el curso básico de **ReactJS**. Al igual que yo, debes sentir una gran emoción de aprender este framework que estan utilizado en los últimos años. 
+
+:::tip
+El resultado final de esta ruta de aprendizaje es una aplicación nombrada : [**Pokemón**](/docs/programacion/reactjs/ejemplos/pokemon.md). En el tutorial encontrarán el paso a paso de la creación, diseño e implementación de la misma. 
+:::
