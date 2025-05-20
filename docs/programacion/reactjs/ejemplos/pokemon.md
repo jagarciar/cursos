@@ -3,7 +3,8 @@ id: react-pokemon
 Title: Pokemón
 description: Paso a paso de la implementación de una aplicación de ejemplo nombrada Pokemon que incluirá todos los conceptos que fueron estudiados en la ruta de aprendizaje básica 
 sidebar_position: 1
-author: jeogarod
+authors: jeogarod
+image: https://i.imgur.com/mErPwqL.png
 tags:
   - react
   - css
@@ -170,7 +171,7 @@ Con el wireframe podemos definir nuestros componentes:
 - El componente **Pokemon** será el encargado de obtener de la API **https://pokeapi.co/api/v2/type/3** todos los nombres de los pokemones. Este arreglo deberá ser enviado como [**Prop**](/docs/programacion/reactjs/proyecto/props.md) al componente **SelectPokemon**. 
 - El componente **SelectPokemon** incluirá un combo box. Cada opción del combo box representará el nombre de un pokemon. Este componente recibirá el arreglo de los pokemones. Cada item del arreglo contendrá un campo **name** y un campo **url**. 
 - El componente **SelectPokemon** incluirá el componente **Abilities** y le enviará como [**Prop**](/docs/programacion/reactjs/proyecto/props.md) la url de la API de consulta del pokemon seleccionado. 
-- El componente **Abilities** incluirá una lista sin un orden específico. Cada item de la lista será un componente **Ability**. Este componente recibirá la URL del endpoint que debe ser consumido para el pokemon seleccionado. Cada item del arreglo contendrá un campo **name**. 
+- El componente **Abilities** incluirá una lista sin un orden específico. Este componente recibirá la URL del endpoint que debe ser consumido para el pokemon seleccionado. Cada item del arreglo contendrá un campo **name**. Por cada **name** debemos crear un componente Cada item de la lista será un componente **Ability**. 
 - El componente **Ability** representará un item de una lista sin un orden especifico y su valor será una habilidad del pokemon seleccionado en el componente **SelectPokemon**. 
 
 ## Desarollo
@@ -197,7 +198,7 @@ Tengamos presente que cada que el usuario seleccione una opción diferente, se r
 
 El componente **Pokemon** fue diseñado e implementado en el archivo **/src/Pokemon.jsx**. Este componente hace uso del **hook** [**useFetch**](/docs/programacion/reactjs/hooks/useFetch.md), el cuál recibe la URI de la API que será consumida inicialmente **https://pokeapi.co/api/v2/type/3** y retorna el resultado (en el campo **data**), el estado de finalización del consumo (en el campo **loading**) y el detalle de un **error** (siempre que se capture uno en el **hook**).
 
-El componente **Pokemon** solo renderizará el componente **SelectPokemon** cuando el campo **data** del **hook** **useFetch** retorne algún valor. En ese momento, le enviará como [**Props**](/docs/programacion/reactjs/proyecto/props.md) el arreglo de pokemones obtenido previamente. 
+El componente **Pokemon** solo renderizará el componente **SelectPokemon** cuando el campo **data** del **hook** [**useFetch**](/docs/programacion/reactjs/hooks/useFetch.md) retorne algún valor. En ese momento, le enviará como [**Props**](/docs/programacion/reactjs/proyecto/props.md) el arreglo de pokemones obtenido previamente. 
 
 ```javascript title="/src/Pokemon.jsx"
 import React from 'react'
@@ -226,7 +227,7 @@ El componente **SelectPokemon** retorna bajo un [**Container**](https://react-bo
 
 El combo box ([**DropdownButton**](https://react-bootstrap.github.io/docs/components/dropdowns/)) responde al evento **onSelect** a través de la ejecución de la función **handleSelect**. Es decir, cada que un usuario seleccione un pokemon, el evento **onSelect** disparará la función **handleSelect**, la cuál buscará el pokemon seleccionado en el arreglo de pokemones que llegaron como [**Props**](/docs/programacion/reactjs/proyecto/props.md). Al ser encontrado, se actualizaran los variables de estado : **urlEndpointPokemon** y **pokemon** mediante las funciones **setURL** y **setPokemon**. Esto generará que el componente se renderice nuevamente y a su vez renderice los componentes hijos (como el componente **Abilities**).
 
-En este caso cuando aún no ha finalizado el consumo la API, el componente **SelectPokemon** retornará un parráfo con la palabra ***Loading...**. Por el contrario, si se generó una excepción durante la integración, el retorno del componente será un parráfo con el mensaje del error capturado. 
+En este caso cuando aún no ha finalizado el consumo la API, el componente **SelectPokemon** retornará un parráfo con la palabra **Loading...**. Por el contrario, si se generó una excepción durante la integración, el retorno del componente será un parráfo con el mensaje del error capturado. 
 
 ```javascript title="/src/SelectPokemon.jsx"
 import React, {  useState } from 'react'
