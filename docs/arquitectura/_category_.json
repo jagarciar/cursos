@@ -1,0 +1,9 @@
+{
+  "label": "Arquitectura de Software",
+  "position": 3,
+  "link": {
+    "type": "generated-index",
+    "slug": "/arquitectura-software",
+    "keywords": ["TOGAF"]
+  }
+}

@@ -143,6 +143,11 @@ srp:
   permalink: '/about-srp'
   description: 'Tutoriales donde se menciona la palabra srp'
 
+togaf:
+  label: 'TOGAF'
+  permalink: '/about-togaf'
+  description: 'Tutoriales donde se menciona la palabra TOGAF'
+
 useCallback:
   label: 'useCallback'
   permalink: '/about-useCallback'
