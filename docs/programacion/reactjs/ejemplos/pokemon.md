@@ -4,7 +4,6 @@ Title: Pokemón
 description: Paso a paso de la implementación de una aplicación de ejemplo nombrada Pokemon que incluirá todos los conceptos que fueron estudiados en la ruta de aprendizaje básica 
 sidebar_position: 1
 authors: jeogarod
-image: https://i.imgur.com/mErPwqL.png
 tags:
   - react
   - css
