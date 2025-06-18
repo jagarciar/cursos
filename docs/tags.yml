@@ -108,6 +108,11 @@ react-router-dom:
   permalink: '/about-react-router-dom'
   description: 'Tutoriales donde se menciona la palabra react-router-dom'
 
+react-query:
+  label: 'React Query'
+  permalink: '/about-react-query'
+  description: 'Tutoriales donde se menciona la palabra React Query'
+
 reactjs:
   label: 'React JS'
   permalink: '/about-react-js'
@@ -182,6 +187,11 @@ useLocalStorage:
   label: 'useLocalStorage'
   permalink: '/about-useLocalStorage'
   description: 'Tutoriales donde se menciona la palabra useLocalStorage'
+
+useQuery:
+  label: 'useQuery'
+  permalink: '/about-useQuery'
+  description: 'Tutoriales donde se menciona la palabra useQuery'
 
 useReducer:
   label: 'useReducer'
