@@ -1,7 +1,7 @@
 ---
 id: react-rick
-Title: Rick & Morty
-description: Paso a paso de la implementación de una aplicación de ejemplo nombrada Rick & Morty que incluirá todos los conceptos que fueron estudiados en la ruta de aprendizaje básica 
+Title: Rick
+description: Paso a paso de la implementación de una aplicación de ejemplo nombrada Rick and Morty que incluirá todos los conceptos que fueron estudiados en la ruta de aprendizaje básica 
 sidebar_position: 2
 authors: jeogarod
 tags:
@@ -20,7 +20,7 @@ tags:
   - api-first
   - hooks
 last_update:
-  date: 06/04/2025
+  date: 05/19/2025
   author: Jeyson Andrés García Rodríguez
 ---
 
@@ -43,7 +43,6 @@ Después de creado el proyecto, debemos acceder a la carpeta que fue creada e in
 ```javascript
 npm install
 ```
-
 ## Instalación de frameworks adicionales
 
 El proyecto que fue creado previamente tiene los paquetes y/o dependencias necesarias. Sin embargo, para esta aplicación vamos a incluir el uso de [**React Bootstrap**](/docs/programacion/reactjs/frameworks/bootstrap.md) y [**Redux**](/docs/programacion/reactjs/frameworks/redux.md)
@@ -80,13 +79,7 @@ Dado que este proyecto hará uso de [**React Bootstrap**](/docs/programacion/rea
   </body>
 </html>
 ```
-## Requerimientos
 
-- El aplicativo debe obtener los personajes al consumir la API REST **https://rickandmortyapi.com/api/character**. 
-- El aplicativo debe mostrar en un combo box los nombres de los personajes. 
-- El aplicativo debe obtener la información del personaje seleccionado. El endpoint de la API a consumir será obtenido de la respuesta del consumo de la API REST **https://rickandmortyapi.com/api/character/{id}** donde **{id}** es el identificador del personaje seleccionado. 
-- El aplicativo debe mostrar la información del personaje en una tarjeta.
-- 
 ## Diseño
 
 El diseño de la aplicación gozará de la estrategía [**API First**](/blog/api-first) dado que fueron entregados como insumo los endpoint de las API's. Estas API's deben ser consumidas desde los componentes del aplicativo ReactJS. 
@@ -553,3 +546,4 @@ Adicionalmente, el componente padre **App.jsx** debe solicitarle a **PersonajesL
 ![Rick and Morty 1](/img/Rick-Morty-1.png)
 
 ![Rick and Morty 1](/img/Rick-Morty-2.png)
+ 
