@@ -1,0 +1,10 @@
+{
+  "label": "Proyectos",
+  "description" : "Creación, estructrura y principales definiciones sobre un proyecto de AngularJS",
+  "position": 1,
+  "link": {
+    "type": "generated-index",
+    "slug": "/angularjs/proyecto",
+    "keywords": []
+  }
+}
