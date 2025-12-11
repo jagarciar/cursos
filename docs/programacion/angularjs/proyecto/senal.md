@@ -1,6 +1,6 @@
 ---
-id: senal
-title: Señal
+id: senales
+title: Señales
 author: jeogarod
 description: En este tutorial vamos a entender qué es una señal, cómo se crea una señal y para qué y por qué son necesarios en un proyecto en AngularJS
 sidebar_position: 7
@@ -14,7 +14,7 @@ last_update:
   author: Jeyson Andrés García Rodríguez
 ---
 
-# Señal
+# Señales
 
 Una **señal** es un **contenedor** que envuelve un **valor** y **notifica** a los **usuarios interesados cuando este cambia**. Las **señales** pueden contener cualquier valor, desde primitivos hasta estructuras de datos complejas. 
 
